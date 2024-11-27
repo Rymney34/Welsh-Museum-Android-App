@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">WelshMuseumApp</string>
+    <string name="crdffMuseum">Cardiff Museum</string>
+    <string name="stFagans">St Fagans</string>
+    <string name="rlm">Roman Legion Museum</string>
+    <string name="exhibits_highlights">Exhibits Highlights</string>
+    <string name="cardiffexhibitsdesc">The National Museum Cardiff in Wales houses an extensive and eclectic collection, celebrating Welsh culture, natural history, art, and archaeology. Its natural history exhibits showcase the geological evolution of Wales, complete with fossils, minerals, and a full-scale dinosaur skeleton that captivates visitors. The museums art galleries hold an impressive range of European paintings, including works by Van Gogh, Monet, and Welsh artists such as Gwen John. Archaeological displays feature prehistoric artifacts, Roman-era relics, and medieval treasures that trace Wales’s historical and cultural journey. With its hands-on exhibits, including an Evolution of Wales gallery and temporary exhibitions, the museum offers an immersive experience into both Welsh and international heritage.</string>
+    <string name="immersive_experience">Immersive Experience</string>
+    <string name="google_street_view">Google Street View</string>
+    <string name="panomric_images">Panomric Images</string>
+    <string name="google_street_viewTxt">Google Street View</string>
+    <string name="exhibits_highlights_video">Exhibits Highlights Video</string>
+    <string name="my_api_key">AIzaSyA1zGorXs18Cw0ysbAUxGxgpzzfhUujj_k</string>
+</resources>

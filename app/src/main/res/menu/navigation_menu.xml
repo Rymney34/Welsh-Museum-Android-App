@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/contentLib"
+        android:icon="@drawable/baseline_local_library_24"
+        android:title="Content Library"/>
+
+    <item
+        android:id="@+id/eventsNe"
+        android:icon="@drawable/baseline_event_24"
+        android:title="Events and News"
+        />
+    <item
+        android:id="@+id/AccessFtr"
+        android:icon="@drawable/baseline_accessibility_24"
+        android:title="Accessability Settings"/>
+
+
+    <item
+        android:id="@+id/app_bar_switch"
+        android:icon="@drawable/baseline_language_24"
+        android:title="Change English to Welsh"
+        app:actionLayout="@layout/switch_item"
+
+       />
+
+
+    <item
+        android:id="@+id/close_btn"
+        android:icon="@drawable/icnclose"
+        android:title="Close"/>
+
+
+</menu>
