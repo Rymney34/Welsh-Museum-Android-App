@@ -30,7 +30,7 @@
         <activity android:name=".ImmersiveExp2"  android:exported="false"/>
         <activity android:name=".ImmersiveExp3"  android:exported="false"/>
         <activity android:name=".DegreeTour" android:exported="false"/>
-        <activity android:name=".GoogleStrView" android:exported="false"/>
+        <activity android:name=".StreetViewActivity" android:exported="false"/>
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -43,7 +43,7 @@
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="@string/my_api_key" />
+            android:value="AIzaSyA1zGorXs18Cw0ysbAUxGxgpzzfhUujj_k" />
     </application>
 
 </manifest>

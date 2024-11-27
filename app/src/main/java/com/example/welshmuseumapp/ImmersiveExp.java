@@ -8,6 +8,7 @@ import android.widget.ImageView;
 import androidx.activity.ComponentActivity;
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
@@ -22,10 +23,23 @@ public class ImmersiveExp extends AppCompatActivity {
 
         ImageView btnBack = findViewById(R.id.btnBack);
 
+        CardView btn1 = findViewById(R.id.btn1);
+
+        CardView btn2 = findViewById(R.id.btn2);
+
+        CardView btn3 = findViewById(R.id.btn3);
+
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startNewActivity(v);
+            }
+        });
+
+        btn1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startNewActivity2(v);
             }
         });
 
@@ -39,6 +53,11 @@ public class ImmersiveExp extends AppCompatActivity {
 
     public void startNewActivity(View v){
         Intent intent = new Intent(this, Museum.class);
+        startActivity(intent);
+    }
+
+    public void startNewActivity2(View v){
+        Intent intent = new Intent(this, StreetViewActivity.class);
         startActivity(intent);
     }
 }
