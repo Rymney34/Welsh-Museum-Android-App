@@ -50,12 +50,12 @@ public class ImmersiveExp extends AppCompatActivity {
             }
         });
 
-//        btn2.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                startNewActivity2(v);
-//            }
-//        });
+        btn3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startNewActivity(v, DegreeTour.class);
+            }
+        });
 
 
     ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.imerExp), (v, insets) -> {
