@@ -2,14 +2,76 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <fragment
-        android:id="@+id/streetviewpanorama"
-        android:name="com.google.android.gms.maps.SupportStreetViewPanoramaFragment"
+<!--    <RelativeLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="74dp"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_marginTop="-3dp"-->
+<!--        android:layout_marginBottom="636dp"-->
+<!--        android:background="@color/graySpec">-->
+
+<!--       -->
+
+<!--    </RelativeLayout>-->
+
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="74dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="-3dp"
+        android:background="@color/graySpec">
 
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="46dp"
+            android:layout_height="41dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="13dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/baseline_arrow_back_24"
+            app:tint="@color/white" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="101dp"
+            android:layout_marginTop="22dp"
+            android:text="@string/google_street_viewtxt"
+            android:textColor="@color/white"
+            android:textSize="25dp" />
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="660dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="71dp"
+        android:layout_marginBottom="0dp">
+
+
+        <fragment
+            android:id="@+id/streetviewpanorama"
+            android:name="com.google.android.gms.maps.SupportStreetViewPanoramaFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
 
 
 </RelativeLayout>

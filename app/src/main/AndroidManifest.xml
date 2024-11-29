@@ -31,6 +31,8 @@
         <activity android:name=".ImmersiveExp3"  android:exported="false"/>
         <activity android:name=".DegreeTour" android:exported="false"/>
         <activity android:name=".StreetViewActivity" android:exported="false"/>
+        <activity android:name=".streetViewActivity2" android:exported="false"/>
+        <activity android:name=".StreetViewActivity3" android:exported="false"/>
         <activity
             android:name=".MainActivity"
             android:exported="true">

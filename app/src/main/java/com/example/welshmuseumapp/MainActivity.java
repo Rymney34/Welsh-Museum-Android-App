@@ -157,10 +157,6 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void startNewActivity2(View v){
-        Intent intent = new Intent(this, stFagans.class);
-        startActivity(intent);
-    }
 
     Runnable sliderRunnable = new Runnable() {
         @Override

@@ -32,16 +32,30 @@ public class ImmersiveExp extends AppCompatActivity {
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startNewActivity(v);
+                finish();
             }
         });
 
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startNewActivity2(v);
+
             }
         });
+
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startNewActivity(v, StreetViewActivity.class);
+            }
+        });
+
+//        btn2.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                startNewActivity2(v);
+//            }
+//        });
 
 
     ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.imerExp), (v, insets) -> {
@@ -51,13 +65,13 @@ public class ImmersiveExp extends AppCompatActivity {
     });
     }
 
-    public void startNewActivity(View v){
-        Intent intent = new Intent(this, Museum.class);
-        startActivity(intent);
-    }
+//    public void startNewActivity(View v){
+//        Intent intent = new Intent(this, Museum.class);
+//        startActivity(intent);
+//    }
 
-    public void startNewActivity2(View v){
-        Intent intent = new Intent(this, StreetViewActivity.class);
+    public void startNewActivity(View v, Class<?> museum){
+        Intent intent = new Intent(this, museum);
         startActivity(intent);
     }
 }

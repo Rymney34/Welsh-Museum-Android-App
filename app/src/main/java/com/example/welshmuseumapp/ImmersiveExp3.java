@@ -10,6 +10,7 @@ import android.widget.TextView;
 import androidx.activity.ComponentActivity;
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
@@ -22,12 +23,26 @@ public class ImmersiveExp3 extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.imersive_exp);
 
+
+        CardView btn1 = findViewById(R.id.btn1);
+
+        CardView btn2 = findViewById(R.id.btn2);
+
+        CardView btn3 = findViewById(R.id.btn3);
+
         ImageView btnBack = findViewById(R.id.btnBack);
 
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startNewActivity(v);
+                finish();
+            }
+        });
+
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startNewActivity(v, StreetViewActivity3.class);
             }
         });
 
@@ -39,8 +54,8 @@ public class ImmersiveExp3 extends AppCompatActivity {
         });
     }
 
-    public void startNewActivity(View v){
-        Intent intent = new Intent(this, stFagans.class);
+    public void startNewActivity(View v, Class<?> museum){
+        Intent intent = new Intent(this, museum);
         startActivity(intent);
     }
 

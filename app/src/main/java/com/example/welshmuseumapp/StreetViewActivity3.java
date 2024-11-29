@@ -1,18 +1,3 @@
-// Copyright 2020 Google LLC
-//
-// Licensed under the Apache License, Version 2.0 (the "License");
-// you may not use this file except in compliance with the License.
-// You may obtain a copy of the License at
-//
-//      http://www.apache.org/licenses/LICENSE-2.0
-//
-// Unless required by applicable law or agreed to in writing, software
-// distributed under the License is distributed on an "AS IS" BASIS,
-// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-// See the License for the specific language governing permissions and
-// limitations under the License.
-
-
 package com.example.welshmuseumapp;
 
 import com.google.android.gms.maps.OnStreetViewPanoramaReadyCallback;
@@ -27,12 +12,9 @@ import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-/**
- * This shows how to create a simple activity with streetview
- */
-public class StreetViewActivity extends AppCompatActivity {
+public class StreetViewActivity3 extends AppCompatActivity {
 
-    private static final LatLng cardiff = new LatLng(51.485486, -3.176925);
+    private static final LatLng RlmStrView = new LatLng(51.610020, -2.95544);
 
     @Override
     protected void onCreate(final Bundle savedInstanceState) {
@@ -53,20 +35,22 @@ public class StreetViewActivity extends AppCompatActivity {
                         getSupportFragmentManager().findFragmentById(R.id.streetviewpanorama);
         streetViewPanoramaFragment.getStreetViewPanoramaAsync(
                 new OnStreetViewPanoramaReadyCallback() {
-            @Override
-            public void onStreetViewPanoramaReady(StreetViewPanorama panorama) {
+                    @Override
+                    public void onStreetViewPanoramaReady(StreetViewPanorama panorama) {
 
-                if (savedInstanceState == null) {
-                    panorama.setPosition(cardiff);
-                }
-            }
-        });
+                        if (savedInstanceState == null) {
+                            panorama.setPosition(RlmStrView);
+                        }
+                    }
+                });
 
     }
 
-    public void startNewActivity(View v){
-        Intent intent = new Intent(this, Museum.class);
-        startActivity(intent);
-    }
+
+
+//    public void startNewActivity(View v){
+//        Intent intent = new Intent(this, Museum.class);
+//        startActivity(intent);
+//    }
 
 }
