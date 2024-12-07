@@ -9,6 +9,7 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -21,9 +22,11 @@ import com.denzcoskun.imageslider.ImageSlider;
 import com.denzcoskun.imageslider.constants.ScaleTypes;
 import com.denzcoskun.imageslider.models.SlideModel;
 
+import org.w3c.dom.Text;
+
 import java.util.ArrayList;
 
-public class Museum extends AppCompatActivity {
+public class Museum extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +45,40 @@ public class Museum extends AppCompatActivity {
         WebView webView = findViewById(R.id.webView);
 
         CardView imersiveExp = findViewById(R.id.imersiveExp);
+
+        TextView textView4 = findViewById(R.id.textView4);
+
+
+        TextView textViewName = findViewById(R.id.textViewName);
+        TextView textView2 = findViewById(R.id.textView2);
+
+        TextView textView8 = findViewById(R.id.textView8);
+
+        TextView textView3 = findViewById(R.id.textView3);
+
+        TextView textView6 = findViewById(R.id.textView6);
+
+        TextView textView10 = findViewById(R.id.textView10);
+
+
+
+
+
+        textView4.setText(resources.getString(R.string.welsh_heritage));
+
+        textViewName.setText(resources.getString(R.string.national_museum_cardiff));
+
+        textView2.setText(resources.getString(R.string.exhibits_highlights));
+
+        textView8.setText(resources.getString(R.string.exhibits_highlights_video));
+
+        textView3.setText(resources.getString(R.string.immersive_experience));
+
+        textView6.setText(resources.getString(R.string.google_street_viewTxt));
+
+        textView10.setText(resources.getString(R.string.panomric_images));
+
+
 
 
 
@@ -72,7 +109,7 @@ public class Museum extends AppCompatActivity {
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                returnBack(v);
+                finish();
             }
         });
 

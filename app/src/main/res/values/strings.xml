@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">WelshMuseumApp</string>
+    <string name="welsh_heritage">Welsh Heritage </string>
     <string name="crdffMuseum">Cardiff Museum</string>
     <string name="stFagans">St Fagans</string>
     <string name="rlm">Roman Legion Museum</string>
@@ -12,4 +13,16 @@
     <string name="exhibits_highlights_video">Exhibits Highlights Video</string>
     <string name="my_api_key">AIzaSyA1zGorXs18Cw0ysbAUxGxgpzzfhUujj_k</string>
     <string name="google_street_viewtxt">Google Street View</string>
+    <string name="national_museum_cardiff">National Museum Cardiff</string>
+    <string name="content_library">Content Library</string>
+    <string name="events_and_news">Events and News</string>
+    <string name="accessability_settings">Accessability Settings</string>
+    <string name="change_english_to_welsh">Change English to Welsh</string>
+
+    <string name="close">Close Program</string>
+    <string name="rlm_name">National Roman Legion Museum</string>
+    <string name="stF_name">St Fagans Museum</string>
+
+
+
 </resources>

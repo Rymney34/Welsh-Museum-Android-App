@@ -2,7 +2,9 @@ package com.example.welshmuseumapp;
 
 import android.annotation.SuppressLint;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
@@ -10,8 +12,11 @@ import android.os.Looper;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
+import android.widget.CompoundButton;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
+import android.widget.Switch;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -31,8 +36,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class MainActivity extends AppCompatActivity {
-
+public class MainActivity extends BaseActivity {
 
 
     private final int SLIDE_INTERVAL = 7000;
@@ -61,6 +65,14 @@ public class MainActivity extends AppCompatActivity {
 
         menuBtn = findViewById(R.id.menuBtn);
 
+        TextView appName = findViewById(R.id.appName);
+
+        TextView cardiffM = findViewById(R.id.cardiffM);
+
+        TextView stF = findViewById(R.id.stF);
+
+        TextView rlM = findViewById(R.id.rlM);
+
 
         ConstraintLayout museumBtn1 = findViewById(R.id.museumBtn1);
 
@@ -78,6 +90,8 @@ public class MainActivity extends AppCompatActivity {
 
         sliderHandler = new Handler(Looper.getMainLooper());
 
+//        Switch sw1 = switch_item.getActionView().findViewbyId(R.id.switch_id);
+
         relativeLayout2.bringToFront();
 
         myNavigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
@@ -94,10 +108,46 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        MenuItem switchItem = myNavigationView.getMenu().findItem(R.id.app_bar_switch);
+        Switch languageSwitch = (Switch) switchItem.getActionView().findViewById(R.id.switch_id);
+
+
+        boolean isWelsh = LanguagePreference.getLanguage(this).equals("cy");
+        languageSwitch.setChecked(isWelsh);
+
+
+        languageSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                String newLanguage;
+
+                if (isChecked) {
+                    newLanguage = "cy";
+                } else {
+                    newLanguage = "en";
+                }
+                LanguagePreference.saveLanguage(MainActivity.this, newLanguage);
+
+                recreate();
+            }
+        });
+
+        appName.setText(resources.getString(R.string.welsh_heritage));
+        cardiffM.setText(resources.getString(R.string.crdffMuseum));
+        stF.setText(resources.getString(R.string.stFagans));
+        rlM.setText(resources.getString(R.string.rlm));
+
+
+
+
         menuBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 drawerLayout.openDrawer(findViewById(R.id.navMn));
+
+
+
             }
         });
 

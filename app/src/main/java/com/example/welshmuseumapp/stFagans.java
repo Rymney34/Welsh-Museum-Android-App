@@ -27,7 +27,7 @@ import com.denzcoskun.imageslider.models.SlideModel;
 
 import java.util.ArrayList;
 
-public class stFagans extends AppCompatActivity {
+public class stFagans extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,7 +40,7 @@ public class stFagans extends AppCompatActivity {
         // Set status bar color
         window.setStatusBarColor(ContextCompat.getColor(this,  R.color.noC));
 
-        TextView textViewName, textView7, textView9;
+
 
         ImageView museumImg, btnBack;
 
@@ -48,11 +48,30 @@ public class stFagans extends AppCompatActivity {
 
         relativeLayout2.bringToFront();
 
-        textViewName = findViewById(R.id.textViewName);
+        TextView textView4 = findViewById(R.id.textView4);
 
-        textView7 = findViewById(R.id.textView7);
+        TextView textViewName = findViewById(R.id.textViewName);
 
-        textView9 = findViewById(R.id.textView9);
+        TextView textView2 = findViewById(R.id.textView2);
+
+        TextView textView8 = findViewById(R.id.textView8);
+
+        TextView textView3 = findViewById(R.id.textView3);
+
+        TextView textView6 = findViewById(R.id.textView6);
+
+        TextView textView10 = findViewById(R.id.textView10);
+
+
+        textView4.setText(resources.getString(R.string.welsh_heritage));
+
+        textViewName.setText(resources.getString(R.string.stF_name));
+
+        textView2.setText(resources.getString(R.string.exhibits_highlights));
+
+        textView8.setText(resources.getString(R.string.exhibits_highlights_video));
+
+        textView3.setText(resources.getString(R.string.immersive_experience));
 
         museumImg = findViewById(R.id.museumImg);
 
@@ -71,7 +90,6 @@ public class stFagans extends AppCompatActivity {
             }
         });
 
-        textViewName.setText("St Fagans Museum");
         RelativeLayout relativeLayout3 = findViewById(R.id.relativeLayout3);
 
         RelativeLayout.LayoutParams params1 = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.WRAP_CONTENT, RelativeLayout.LayoutParams.WRAP_CONTENT);
