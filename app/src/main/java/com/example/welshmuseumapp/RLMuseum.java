@@ -87,7 +87,7 @@ public class RLMuseum extends BaseActivity {
 
         RelativeLayout.LayoutParams params1 = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.WRAP_CONTENT, RelativeLayout.LayoutParams.WRAP_CONTENT);
 
-        textViewName.setLayoutParams(params1);
+
 
         params1.setMargins(dpToPx(60), dpToPx(12), 0, 0);
 

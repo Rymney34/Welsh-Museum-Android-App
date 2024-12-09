@@ -108,6 +108,10 @@ public class MainActivity extends BaseActivity {
                     startActivity(intent);
 
                 }
+                if(id == R.id.contentLib){
+                    Intent intent = new Intent(MainActivity.this, ContentLibrary.class);
+                    startActivity(intent);
+                }
 
                 if (id == R.id.close_btn) {
                     finish();

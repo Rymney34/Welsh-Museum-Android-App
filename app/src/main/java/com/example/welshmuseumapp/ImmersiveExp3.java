@@ -40,7 +40,6 @@ public class ImmersiveExp3 extends BaseActivity {
 
         TextView textView5 = findViewById(R.id.textView5);
 
-
         textView5.setText(resources.getString(R.string.immersive_experience));
 
         panoramic2.setText(resources.getString(R.string.panoramic_image));
@@ -58,6 +57,12 @@ public class ImmersiveExp3 extends BaseActivity {
             @Override
             public void onClick(View v) {
                 startNewActivity(v, StreetViewActivity3.class);
+            }
+        });
+        btn3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startNewActivity(v, DegreeTour3.class);
             }
         });
 

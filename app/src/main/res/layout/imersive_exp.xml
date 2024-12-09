@@ -25,17 +25,20 @@
 
     <TextView
         android:id="@+id/textView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
+        android:layout_width="195dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="36dp"
+        android:contentDescription="@string/immersive_experience"
         android:text="@string/immersive_experience"
         android:textColor="@color/white"
-        android:textSize="25dp"
+        android:textSize="25sp"
+        app:autoSizeMaxTextSize="30dp"
+        app:autoSizeMinTextSize="3dp"
+        app:autoSizeStepGranularity="1dp"
+        app:autoSizeTextType="uniform"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.551"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:contentDescription="@string/immersive_experience"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/btn1"

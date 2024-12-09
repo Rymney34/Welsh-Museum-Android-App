@@ -29,6 +29,7 @@ public class ImmersiveExp2 extends BaseActivity {
 
         ImageView btnBack = findViewById(R.id.btnBack);
 
+
         TextView panoramic2 = findViewById(R.id.panoramic2);
 
         TextView panoramic = findViewById(R.id.panoramic);
@@ -54,7 +55,13 @@ public class ImmersiveExp2 extends BaseActivity {
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startNewActivity2(v);
+                startNewActivity(v, streetViewActivity2.class);
+            }
+        });
+        btn3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startNewActivity(v, DegreeTour2.class);
             }
         });
 
@@ -73,7 +80,7 @@ public class ImmersiveExp2 extends BaseActivity {
         startActivity(intent);
     }
 
-    public void startNewActivity2(View v){
+    public void startNewActivity(View v){
         Intent intent = new Intent(this, streetViewActivity2.class);
         startActivity(intent);
     }

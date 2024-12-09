@@ -73,6 +73,7 @@ public class stFagans extends BaseActivity {
 
         textView3.setText(resources.getString(R.string.immersive_experience));
 
+
         museumImg = findViewById(R.id.museumImg);
 
         btnBack = findViewById(R.id.btnBack);
@@ -94,7 +95,6 @@ public class stFagans extends BaseActivity {
 
         RelativeLayout.LayoutParams params1 = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.WRAP_CONTENT, RelativeLayout.LayoutParams.WRAP_CONTENT);
 
-        textViewName.setLayoutParams(params1);
 
         params1.setMargins(dpToPx(110), dpToPx(10), 0, 0);
 

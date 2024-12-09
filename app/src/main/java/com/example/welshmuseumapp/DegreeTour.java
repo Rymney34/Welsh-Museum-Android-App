@@ -11,7 +11,7 @@ import android.widget.ImageView;
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class DegreeTour extends AppCompatActivity {
+public class DegreeTour extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +20,12 @@ public class DegreeTour extends AppCompatActivity {
         setContentView(R.layout.degree_tour);
 
         WebView webView1 = findViewById(R.id.webView1);
+
+        WebView webView2 = findViewById(R.id.webView2);
+
+        WebView webView3 = findViewById(R.id.webView3);
+
+        WebView webView4 = findViewById(R.id.webView4);
 
         ImageView btnBack = findViewById(R.id.btnBack);
 
@@ -35,6 +41,21 @@ public class DegreeTour extends AppCompatActivity {
         webView1.getSettings().setAllowUniversalAccessFromFileURLs(true);
         webView1.getSettings().setAllowFileAccessFromFileURLs(true);
         webView1.loadUrl("https://my.matterport.com/show/?m=VLWSNX62ax8");
+
+        webView2.getSettings().setJavaScriptEnabled(true);
+        webView2.getSettings().setAllowUniversalAccessFromFileURLs(true);
+        webView2.getSettings().setAllowFileAccessFromFileURLs(true);
+        webView2.loadUrl("https://my.matterport.com/show/?m=s87VCae824d");
+
+        webView3.getSettings().setJavaScriptEnabled(true);
+        webView3.getSettings().setAllowUniversalAccessFromFileURLs(true);
+        webView3.getSettings().setAllowFileAccessFromFileURLs(true);
+        webView3.loadUrl("https://my.matterport.com/show/?m=9D1eaaBaiNB");
+
+        webView4.getSettings().setJavaScriptEnabled(true);
+        webView4.getSettings().setAllowUniversalAccessFromFileURLs(true);
+        webView4.getSettings().setAllowFileAccessFromFileURLs(true);
+        webView4.loadUrl("https://my.matterport.com/show/?m=i812RUXgJh7");
 
 //        webView1.setWebViewClient(new WebViewClient() {
 //            @Override
