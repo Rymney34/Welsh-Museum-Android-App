@@ -24,7 +24,7 @@ import com.denzcoskun.imageslider.models.SlideModel;
 
 import java.util.ArrayList;
 
-public class RLMuseum extends AppCompatActivity {
+public class RLMuseum extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,9 +34,6 @@ public class RLMuseum extends AppCompatActivity {
 
 
 
-
-        TextView textViewName, textView7, textView9;
-
         ImageView museumImg, btnBack;
 
 
@@ -45,12 +42,31 @@ public class RLMuseum extends AppCompatActivity {
 
         relativeLayout2.bringToFront();
 
-        textViewName = findViewById(R.id.textViewName);
+        TextView textView4 = findViewById(R.id.textView4);
+
+        TextView textViewName = findViewById(R.id.textViewName);
+
+        TextView textView2 = findViewById(R.id.textView2);
+
+        TextView textView8 = findViewById(R.id.textView8);
+
+        TextView textView3 = findViewById(R.id.textView3);
+
+        TextView textView6 = findViewById(R.id.textView6);
+
+        TextView textView10 = findViewById(R.id.textView10);
 
 
-        textView7 = findViewById(R.id.textView7);
+        textView4.setText(resources.getString(R.string.welsh_heritage));
 
-        textView9 = findViewById(R.id.textView9);
+        textViewName.setText(resources.getString(R.string.rlm_name));
+
+        textView2.setText(resources.getString(R.string.exhibits_highlights));
+
+        textView8.setText(resources.getString(R.string.exhibits_highlights_video));
+
+        textView3.setText(resources.getString(R.string.immersive_experience));
+
 
         museumImg = findViewById(R.id.museumImg);
 
@@ -67,7 +83,6 @@ public class RLMuseum extends AppCompatActivity {
             }
         });
 
-        textViewName.setText("National Roman Legion Museum");
 
 
         RelativeLayout.LayoutParams params1 = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.WRAP_CONTENT, RelativeLayout.LayoutParams.WRAP_CONTENT);

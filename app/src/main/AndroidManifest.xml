@@ -29,10 +29,13 @@
             <activity android:name=".ImmersiveExp"  android:exported="false"/>
         <activity android:name=".ImmersiveExp2"  android:exported="false"/>
         <activity android:name=".ImmersiveExp3"  android:exported="false"/>
-        <activity android:name=".DegreeTour" android:exported="false"/>
+        <activity android:name=".DegreeTour" android:exported="false"
+            tools:ignore="Instantiatable" />
         <activity android:name=".StreetViewActivity" android:exported="false"/>
         <activity android:name=".streetViewActivity2" android:exported="false"/>
         <activity android:name=".StreetViewActivity3" android:exported="false"/>
+        <activity android:name=".ContentLibrary" android:exported="false"/>
+        <activity android:name=".EventNews" android:exported="false"/>
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -42,7 +45,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
+        <activity android:name=".AccessabilitySettings" android:exported="false"/>
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/my_api_key" />

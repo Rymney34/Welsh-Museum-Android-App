@@ -20,7 +20,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/baseline_arrow_back_24"
-        app:tint="@color/white" />
+        app:tint="@color/white"
+        android:contentDescription="@string/returnBack"/>
 
     <TextView
         android:id="@+id/textView5"
@@ -33,7 +34,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.551"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/immersive_experience"/>
 
     <androidx.cardview.widget.CardView
         android:id="@+id/btn1"
@@ -49,7 +51,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" >
+        app:layout_constraintStart_toStartOf="parent"
+        android:contentDescription="@string/panomric_images">
 
 
         <ImageView
@@ -64,10 +67,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="145dp"
-            android:layout_marginTop="42dp"
-            android:text="Panoramic Image"
+            android:layout_marginTop="45dp"
+            android:text="@string/panoramic_image"
             android:textColor="@color/white"
-            android:textSize="29dp"
+            android:textSize="25sp"
+            app:autoSizeMaxTextSize="30dp"
+            app:autoSizeMinTextSize="12dp"
+            app:autoSizeStepGranularity="5dp"
+            app:autoSizeTextType="uniform"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.496"
             app:layout_constraintStart_toStartOf="parent"
@@ -88,7 +95,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        android:contentDescription="@string/google_street_view">
 
 
         <ImageView
@@ -104,10 +112,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="145dp"
-            android:layout_marginTop="42dp"
+            android:layout_marginTop="44dp"
             android:text="@string/google_street_viewTxt"
             android:textColor="@color/white"
-            android:textSize="28dp"
+            android:textSize="24sp"
+            app:autoSizeMaxTextSize="28dp"
+            app:autoSizeMinTextSize="12dp"
+            app:autoSizeStepGranularity="5dp"
+            app:autoSizeTextType="uniform"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.496"
             app:layout_constraintStart_toStartOf="parent"
@@ -128,7 +140,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        android:contentDescription="@string/_360_degree_tour">
 
 
         <ImageView
@@ -144,10 +157,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="145dp"
-            android:layout_marginTop="42dp"
-            android:text="360 Degree Tour"
+            android:layout_marginTop="45dp"
+            android:text="@string/_360_degree_tour"
             android:textColor="@color/white"
-            android:textSize="29dp"
+            android:textSize="24sp"
+            app:autoSizeMaxTextSize="29dp"
+            app:autoSizeMinTextSize="12dp"
+            app:autoSizeStepGranularity="5dp"
+            app:autoSizeTextType="uniform"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.496"
             app:layout_constraintStart_toStartOf="parent"

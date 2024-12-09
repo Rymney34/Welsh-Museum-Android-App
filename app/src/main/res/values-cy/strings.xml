@@ -1,4 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">WelshMuseumApp</string>
+    <string name="crdffMuseum">Amgueddfa Caerdydd</string>
+    <string name="stFagans">Sain Ffagan</string>
+    <string name="rlm">Amgueddfa Lleng Rufeinig</string>
+    <string name="exhibits_highlights">Arddangosfeydd Uchafbwyntiau</string>
+    <string name="cardiffexhibitsdesc">The National Museum Cardiff in Wales houses an extensive and eclectic collection, celebrating Welsh culture, natural history, art, and archaeology. Its natural history exhibits showcase the geological evolution of Wales, complete with fossils, minerals, and a full-scale dinosaur skeleton that captivates visitors. The museums art galleries hold an impressive range of European paintings, including works by Van Gogh, Monet, and Welsh artists such as Gwen John. Archaeological displays feature prehistoric artifacts, Roman-era relics, and medieval treasures that trace Wales’s historical and cultural journey. With its hands-on exhibits, including an Evolution of Wales gallery and temporary exhibitions, the museum offers an immersive experience into both Welsh and international heritage.</string>
+    <string name="immersive_experience">Profiad Trochi</string>
+    <string name="google_street_view">Google Street View</string>
+    <string name="panomric_images">Delweddau Panomrig</string>
+    <string name="google_street_viewTxt">Google Street View</string>
+    <string name="exhibits_highlights_video">Yn Arddangos Fideo Uchafbwyntiau</string>
+    <string name="my_api_key">AIzaSyA1zGorXs18Cw0ysbAUxGxgpzzfhUujj_k</string>
+    <string name="google_street_viewtxt">Google Street View</string>
+    <string name="welsh_heritage">Etifeddiaeth Gymreig</string>
+    <string name="national_museum_cardiff">Amgueddfa Genedlaethol Caerdydd</string>
+    <string name="content_library">Llyfrgell Cynnwys</string>
+    <string name="events_and_news">Digwyddiadau a Newyddion</string>
+    <string name="accessability_settings">Gosodiadau Hygyrchedd</string>
+    <string name="change_english_to_welsh">Newid Saesneg i Gymraeg</string>
+    <string name="close">Cau Bwydlen</string>
+    <string name="rlm_name">Amgueddfa Lleng Rufeinig Cymru</string>
+    <string name="stF_name">Amgueddfa Sain Ffagan</string>
+    <string name="menu">Bwydlen</string>
+    <string name="panoramic_image">Delwedd Banoramig</string>
+    <string name="_360_degree_tour">Taith 360 Gradd</string>
+    <string name="talkback_feature">TalkBack Feature</string>
+    <string name="returnBack">dychwelyd</string>
+    <string name="museum_name">Museum name</string>
 </resources>

@@ -15,7 +15,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class ImmersiveExp3 extends AppCompatActivity {
+public class ImmersiveExp3 extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +31,21 @@ public class ImmersiveExp3 extends AppCompatActivity {
         CardView btn3 = findViewById(R.id.btn3);
 
         ImageView btnBack = findViewById(R.id.btnBack);
+
+        TextView panoramic2 = findViewById(R.id.panoramic2);
+
+        TextView panoramic = findViewById(R.id.panoramic);
+
+        TextView degreeTour = findViewById(R.id.deegree_tour);
+
+        TextView textView5 = findViewById(R.id.textView5);
+
+
+        textView5.setText(resources.getString(R.string.immersive_experience));
+
+        panoramic2.setText(resources.getString(R.string.panoramic_image));
+        panoramic.setText(resources.getString(R.string.google_street_viewTxt));
+        degreeTour.setText(resources.getString(R.string._360_degree_tour));
 
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
