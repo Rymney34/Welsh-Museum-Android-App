@@ -19,7 +19,13 @@
     <string name="events_and_news">Digwyddiadau a Newyddion</string>
     <string name="accessability_settings">Gosodiadau Hygyrchedd</string>
     <string name="change_english_to_welsh">Newid Saesneg i Gymraeg</string>
-    <string name="close">Cau Rhaglen</string>
+    <string name="close">Cau Bwydlen</string>
     <string name="rlm_name">Amgueddfa Lleng Rufeinig Cymru</string>
     <string name="stF_name">Amgueddfa Sain Ffagan</string>
+    <string name="menu">Bwydlen</string>
+    <string name="panoramic_image">Delwedd Banoramig</string>
+    <string name="_360_degree_tour">Taith 360 Gradd</string>
+    <string name="talkback_feature">TalkBack Feature</string>
+    <string name="returnBack">dychwelyd</string>
+    <string name="museum_name">Museum name</string>
 </resources>

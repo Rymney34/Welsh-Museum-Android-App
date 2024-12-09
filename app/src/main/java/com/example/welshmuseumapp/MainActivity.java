@@ -5,10 +5,13 @@ import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.Resources;
+import android.media.RouteListingPreference;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
 
+import android.provider.Settings;
+import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
@@ -31,6 +34,8 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.viewpager.widget.ViewPager;
 
 import com.google.android.material.navigation.NavigationView;
+
+import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -72,8 +77,7 @@ public class MainActivity extends BaseActivity {
         TextView stF = findViewById(R.id.stF);
 
         TextView rlM = findViewById(R.id.rlM);
-
-
+//
         ConstraintLayout museumBtn1 = findViewById(R.id.museumBtn1);
 
         ConstraintLayout museumBtn2 = findViewById(R.id.museumBtn2);
@@ -90,7 +94,6 @@ public class MainActivity extends BaseActivity {
 
         sliderHandler = new Handler(Looper.getMainLooper());
 
-//        Switch sw1 = switch_item.getActionView().findViewbyId(R.id.switch_id);
 
         relativeLayout2.bringToFront();
 
@@ -99,6 +102,12 @@ public class MainActivity extends BaseActivity {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 int id = item.getItemId();
+
+                if(id == R.id.AccessFtr){
+                    Intent intent = new Intent(Settings.ACTION_ACCESSIBILITY_SETTINGS);
+                    startActivity(intent);
+
+                }
 
                 if (id == R.id.close_btn) {
                     finish();
@@ -121,8 +130,10 @@ public class MainActivity extends BaseActivity {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 String newLanguage;
 
+
                 if (isChecked) {
                     newLanguage = "cy";
+
                 } else {
                     newLanguage = "en";
                 }
@@ -139,8 +150,8 @@ public class MainActivity extends BaseActivity {
 
 
 
-
         menuBtn.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View v) {
 
@@ -148,8 +159,28 @@ public class MainActivity extends BaseActivity {
 
 
 
+                TextView menuName = findViewById(R.id.menuName);
+
+
+//                drawerLayout.closeDrawer(R.id.navMn);
+
             }
         });
+        NavigationView navigationView = findViewById(R.id.navMn);
+        Menu menu = navigationView.getMenu();
+
+        menu.findItem(R.id.contentLib).setTitle(resources.getString(R.string.content_library));
+        menu.findItem(R.id.eventsNe).setTitle(resources.getString(R.string.events_and_news));
+        menu.findItem(R.id.AccessFtr).setTitle(resources.getString(R.string.accessability_settings));
+        menu.findItem(R.id.app_bar_switch).setTitle(resources.getString(R.string.change_english_to_welsh));
+        menu.findItem(R.id.close_btn).setTitle(resources.getString(R.string.close));
+
+
+        View headerView = navigationView.getHeaderView(0);
+        TextView menuNameHeader = headerView.findViewById(R.id.menuName);
+        menuNameHeader.setText(resources.getString(R.string.menu));
+
+//        drawerLayout.openDrawer(findViewById(R.id.navMn));
 
         museumBtn1.setOnClickListener(new View.OnClickListener() {
 
@@ -166,7 +197,7 @@ public class MainActivity extends BaseActivity {
 
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(), "Toast Message", Toast.LENGTH_SHORT).show();
+
                 startNewActivity(v, stFagans.class);
             }
         });
@@ -193,8 +224,6 @@ public class MainActivity extends BaseActivity {
         startAutoSlide();
 
 
-
-
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
@@ -203,6 +232,11 @@ public class MainActivity extends BaseActivity {
     }
 
     public void startNewActivity(View v, Class<?> museum){
+        Intent intent = new Intent(this, museum);
+        startActivity(intent);
+    }
+
+    public void startNewActivity3(Class<?> museum){
         Intent intent = new Intent(this, museum);
         startActivity(intent);
     }
@@ -217,7 +251,6 @@ public class MainActivity extends BaseActivity {
 
         }
     };
-
 
 
     public void startAutoSlide(){

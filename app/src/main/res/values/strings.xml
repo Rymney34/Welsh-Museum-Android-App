@@ -19,10 +19,15 @@
     <string name="accessability_settings">Accessability Settings</string>
     <string name="change_english_to_welsh">Change English to Welsh</string>
 
-    <string name="close">Close Program</string>
+    <string name="close">Close Menu</string>
     <string name="rlm_name">National Roman Legion Museum</string>
     <string name="stF_name">St Fagans Museum</string>
-
+    <string name="menu">Menu</string>
+    <string name="panoramic_image">Panoramic Image</string>
+    <string name="_360_degree_tour">360 Degree Tour</string>
+    <string name="talkback_feature">TalkBack Feature</string>
+    <string name="returnBack">return</string>
+    <string name="museum_name">Museum name</string>
 
 
 </resources>

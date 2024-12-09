@@ -35,10 +35,11 @@
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentBottom="true"
-                android:layout_marginStart="133dp"
-                android:layout_marginTop="25dp"
-                android:layout_marginEnd="137dp"
+                android:layout_marginStart="138dp"
+                android:layout_marginTop="23dp"
+                android:layout_marginEnd="130dp"
                 android:layout_marginBottom="2dp"
+                android:gravity="center"
                 android:text="@string/welsh_heritage"
                 android:textColor="@color/white"
                 android:textSize="20dp"
@@ -89,10 +90,10 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/museumBtn1"
-            android:layout_width="133dp"
-            android:layout_height="141dp"
+            android:layout_width="131dp"
+            android:layout_height="151dp"
             android:layout_marginEnd="276dp"
-            android:layout_marginBottom="52dp"
+            android:layout_marginBottom="50dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent">
 
@@ -102,11 +103,12 @@
                 android:layout_height="102dp"
                 android:layout_centerHorizontal="true"
                 android:layout_marginEnd="8dp"
-                android:layout_marginBottom="32dp"
+                android:layout_marginBottom="45dp"
                 android:elevation="0dp"
                 app:cardCornerRadius="500dp"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent">
+                app:layout_constraintEnd_toEndOf="parent"
+                >
 
                 <ImageView
                     android:layout_width="140dp"
@@ -120,26 +122,36 @@
 
             <TextView
                 android:id="@+id/cardiffM"
-                android:layout_width="109dp"
-                android:layout_height="26dp"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_below="@+id/roundCardView"
-                android:layout_marginTop="4dp"
-                android:layout_marginEnd="8dp"
-                android:gravity="center"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="15dp"
+                android:gravity="center_horizontal"
                 android:text="@string/crdffMuseum"
                 android:textColor="@color/white"
+                android:textSize="15sp"
+                app:autoSizeMaxTextSize="19dp"
+                app:autoSizeMinTextSize="3dp"
+                app:autoSizeStepGranularity="1dp"
+                app:autoSizeTextType="uniform"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/roundCardView"
-                tools:ignore="MissingConstraints" />
+                tools:ignore="MissingConstraints"
+
+
+                />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/museumBtn2"
-            android:layout_width="126dp"
-            android:layout_height="141dp"
+            android:layout_width="127dp"
+            android:layout_height="151dp"
             android:layout_marginEnd="140dp"
-            android:layout_marginBottom="52dp"
+            android:layout_marginBottom="50dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent">
 
@@ -149,7 +161,7 @@
                 android:layout_height="102dp"
                 android:layout_centerHorizontal="true"
                 android:layout_marginEnd="8dp"
-                android:layout_marginBottom="32dp"
+                android:layout_marginBottom="44dp"
                 android:elevation="0dp"
                 app:cardCornerRadius="500dp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -168,23 +180,27 @@
             <TextView
                 android:id="@+id/stF"
                 android:layout_width="110dp"
-                android:layout_height="23dp"
+                android:layout_height="wrap_content"
                 android:layout_below="@+id/roundCardView2"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="1dp"
                 android:layout_marginEnd="8dp"
-                android:gravity="center"
+                android:gravity="center_horizontal"
                 android:text="@string/stFagans"
                 android:textColor="@color/white"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/roundCardView2"
-                tools:ignore="MissingConstraints" />
+                android:textSize="15sp"
+                app:autoSizeMaxTextSize="19dp"
+                app:autoSizeMinTextSize="3dp"
+                app:autoSizeStepGranularity="1dp"
+                app:autoSizeTextType="uniform"/>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/museumBtn3"
-            android:layout_width="118dp"
-            android:layout_height="157dp"
+            android:layout_width="119dp"
+            android:layout_height="179dp"
             android:layout_marginEnd="16dp"
             android:layout_marginBottom="28dp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -196,7 +212,7 @@
                 android:layout_height="102dp"
                 android:layout_centerHorizontal="true"
                 android:layout_marginEnd="4dp"
-                android:layout_marginBottom="56dp"
+                android:layout_marginBottom="66dp"
                 android:elevation="0dp"
                 app:cardCornerRadius="500dp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -215,15 +231,20 @@
             <TextView
                 android:id="@+id/rlM"
                 android:layout_width="116dp"
-                android:layout_height="39dp"
+                android:layout_height="wrap_content"
                 android:layout_below="@+id/roundCardView3"
-                android:layout_marginTop="8dp"
-                android:gravity="center"
+                android:layout_marginTop="1dp"
+                android:gravity="center_horizontal"
                 android:text="@string/rlm"
                 android:textColor="@color/white"
                 app:layout_constraintTop_toBottomOf="@+id/roundCardView3"
-                tools:ignore="MissingConstraints"
-                tools:layout_editor_absoluteX="1dp" />
+                tools:layout_editor_absoluteX="1dp"
+                android:textSize="15sp"
+                app:autoSizeMaxTextSize="19dp"
+                app:autoSizeMinTextSize="3dp"
+                app:autoSizeStepGranularity="1dp"
+                app:autoSizeTextType="uniform"
+                tools:ignore="MissingConstraints" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -234,7 +255,8 @@
         android:layout_height="match_parent"
         android:layout_gravity="start"
         app:menu = "@menu/navigation_menu"
-        app:headerLayout="@layout/header_layout"/>
+        app:headerLayout="@layout/header_layout"
+        app:itemTextAppearance="@style/MenuItemTextStyle"/>
 
 
 </androidx.drawerlayout.widget.DrawerLayout>

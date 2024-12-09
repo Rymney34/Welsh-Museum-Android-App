@@ -5,17 +5,23 @@
     <item
         android:id="@+id/contentLib"
         android:icon="@drawable/baseline_local_library_24"
-        android:title="@string/content_library"/>
+        android:title="@string/content_library"
+        android:contentDescription="@string/content_library"
+       />
 
     <item
         android:id="@+id/eventsNe"
         android:icon="@drawable/baseline_event_24"
         android:title="@string/events_and_news"
+        android:contentDescription="@string/events_and_news"
+
         />
     <item
         android:id="@+id/AccessFtr"
         android:icon="@drawable/baseline_accessibility_24"
-        android:title="@string/accessability_settings"/>
+        android:title="@string/accessability_settings"
+        android:contentDescription="@string/accessability_settings"
+        />
 
 
     <item
@@ -23,6 +29,7 @@
         android:icon="@drawable/baseline_language_24"
         android:title="@string/change_english_to_welsh"
         app:actionLayout="@layout/switch_item"
+        android:contentDescription="@string/change_english_to_welsh"
 
        />
 
@@ -30,7 +37,9 @@
     <item
         android:id="@+id/close_btn"
         android:icon="@drawable/icnclose"
-        android:title="@string/close"/>
+        android:title="@string/close"
+        android:contentDescription="@string/close"
+        />
 
 
 </menu>
