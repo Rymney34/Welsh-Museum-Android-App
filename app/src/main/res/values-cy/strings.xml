@@ -28,4 +28,9 @@
     <string name="talkback_feature">TalkBack Feature</string>
     <string name="returnBack">dychwelyd</string>
     <string name="museum_name">Museum name</string>
+    <string name="celebrated">Dyddiadau dathlu yn y calendr Cymraeg</string>
+    <string name="welshBio">Y Bywgraffiadur Cymreig</string>
+    <string name="hwb">Casgliad cenedlaethol o adnoddau addysgol digidol Cymraeg yw Hwb</string>
+    <string name="welshAcademy">Geiriadur Saesneg-Cymraeg yr Academi Ar-lein</string>
+    <string name="y_ta">Y Termiadur Addysg</string>
 </resources>

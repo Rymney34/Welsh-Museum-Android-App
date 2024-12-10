@@ -26,17 +26,26 @@
             android:layout_marginTop="10dp"
             android:textSize="20sp"
             app:autoSizeMaxTextSize="28dp"
-            app:autoSizeMinTextSize="5dp"
+            app:autoSizeMinTextSize="8dp"
+            app:autoSizeStepGranularity="1dp"
+            app:autoSizeTextType="uniform"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/textViewDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"
+            app:autoSizeMaxTextSize="24dp"
+            app:autoSizeMinTextSize="6dp"
             app:autoSizeStepGranularity="1dp"
             app:autoSizeTextType="uniform"
             />
 
-        <ImageView
-            android:id="@+id/imageViewIcon"
-            android:layout_width="374dp"
-            android:layout_height="204dp"
-            android:layout_margin="5dp"
-            android:src="@drawable/ic_launcher_foreground" />
+
     </LinearLayout>
 
 

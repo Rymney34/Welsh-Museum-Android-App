@@ -28,6 +28,15 @@
     <string name="talkback_feature">TalkBack Feature</string>
     <string name="returnBack">return</string>
     <string name="museum_name">Museum name</string>
+    <string name="celebrated">Celebrated dates in Welsh calendar</string>
+    <string name="welshBio">Dictionary of Welsh Biography</string>
+    <string name="hwb">Hwb is national collection of Welsh digital educational resources</string>
+    <string name="welshAcademy">The Welsh Academy English-Welsh Dictionary Online</string>
+    <string name="y_ta">Y Termiadur Addysg</string>
+    <string name="stDwynd">St Dwynwens Day</string>
+    <string name="stDwyndDesc">Maybe its the views of soaring mountains that do it, but were a romantic bunch here! We even have our own patron saint of lovers. Forget Valentine\'s Day, 25 January is the most romantic day of the year in Wales. We give romantic gifts to loved ones to remember St Dwynwen a love struck lass who became a nun after being forbidden by her father from marrying the man she loved. Ahh.</string>
+
+
 
 
 </resources>

@@ -112,6 +112,10 @@ public class MainActivity extends BaseActivity {
                     Intent intent = new Intent(MainActivity.this, ContentLibrary.class);
                     startActivity(intent);
                 }
+                if(id == R.id.eventsNe){
+                    Intent intent = new Intent(MainActivity.this, EventNews.class);
+                    startActivity(intent);
+                }
 
                 if (id == R.id.close_btn) {
                     finish();
