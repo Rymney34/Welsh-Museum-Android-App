@@ -20,9 +20,13 @@ public class EventNews extends BaseActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.events_news);
 
+        TextView txtV = findViewById(R.id.textVieweN);
+
+        txtV.setText(resources.getString(R.string.events_and_news));
+
         ImageView btnBck = findViewById(R.id.btnBack2);
 
-        cardCreator("stDwynd", "stDwyndDesc");
+
 
         btnBck.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -30,6 +34,24 @@ public class EventNews extends BaseActivity{
                 finish();
             }
         });
+
+        cardCreator("stDwynd", "stDwyndDesc");
+
+
+        cardCreator("GwylName", "GwylDesc");
+
+        cardCreator("DyddM", "DyddMText");
+
+        cardCreator("stDavid", "stDavidDesc");
+
+        cardCreator("pancakeD", "pancakeDesc");
+
+        cardCreator("lDay", "lDayDesc");
+
+        cardCreator("easterD", "easterDesc");
+
+        cardCreator("calanMai", "calanMaiDesc");
+
 
     }
 
@@ -43,8 +65,8 @@ public class EventNews extends BaseActivity{
 
         TextView textView = newCard.findViewById(R.id.textViewName);
 
-        TextView textViewDesc = newCard.findViewById(R.id.textViewDesc);
 
+        TextView textViewDesc = newCard.findViewById(R.id.textViewDesc);
 
         textView.setText(getResources().getIdentifier(heading, "string", getPackageName()));
         textViewDesc.setText(getResources().getIdentifier(desc, "string", getPackageName()));
@@ -54,7 +76,7 @@ public class EventNews extends BaseActivity{
                 LinearLayout.LayoutParams.MATCH_PARENT,
                 LinearLayout.LayoutParams.WRAP_CONTENT
         );
-        params.setMargins(16, 190, 16, 16);
+        params.setMargins(16, 210, 16, 16);
         newCard.setLayoutParams(params);
 
 

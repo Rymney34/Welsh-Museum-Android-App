@@ -35,6 +35,34 @@
     <string name="y_ta">Y Termiadur Addysg</string>
     <string name="stDwynd">St Dwynwens Day</string>
     <string name="stDwyndDesc">Maybe its the views of soaring mountains that do it, but were a romantic bunch here! We even have our own patron saint of lovers. Forget Valentine\'s Day, 25 January is the most romantic day of the year in Wales. We give romantic gifts to loved ones to remember St Dwynwen a love struck lass who became a nun after being forbidden by her father from marrying the man she loved. Ahh.</string>
+    <string name="DyddM">Dydd Miwsig Cymru</string>
+    <string name="DyddMText">For Dydd Miwsig Cymru (Welsh Language Music Day) we celebrate Welsh language music of all forms, in all genres! The country is taken over with pop-up gigs and performances in all sorts of venues. Whether you’re into indie, rock, punk, funk, folk, electronica, hip hop or anything else, there’s incredible music being made in the Welsh language for you to discover.</string>
+    <string name="GwylName">Gŵyl Fair y Canhwyllau</string>
+    <string name="GwylDesc">
+            Traditionally, Gŵyl Fair y Canhwyllau (Mary’s Festival of the Candles), celebrated on February 2, marked the coming of spring in Wales. Candles were lit and placed in windows and parlour games played. Though no longer a fixture on the calendar, candle-themed services take place in some churches to celebrate the date.
+    </string>
+    <string name="stDavid">St Davids Day</string>
+    <string name="stDavidDesc">
+        The national day of Wales - St Davids Day takes place on 1 March. Across the country there are street parades that are great fun for everyone with lots of Welsh flags flying. Many people pin a daffodil or leek - Wales national emblems - to their clothes and some, especially children, wear Welsh national costume, national team rugby shirts, or dress up as leeks, daffodils or even dragons
+    </string>
+    <string name="pancakeD">Diwrnod Crempog (Pancake Day)</string>
+    <string name="pancakeDesc">
+    Held on the eve of the Christian fasting period of Lent, Diwrnod Crempog (Pancake Day) sees people making and tucking into pancakes of all shapes and sizes.
+    </string>
+    <string name="lDay">National Laverbread Day</string>
+    <string name="lDayDesc">
+   A new addition to the Welsh calendar, we use 14 April to celebrate the oddly delicious Welsh staple of laverbread. Laverbread is the cooked version of ‘laver’, or porphyra seaweed, which is a diaphanous red algae found abundantly along Wales’ rocky coastline. The day was launched by The Pembrokeshire Beach Food Company in 2022, in celebration of this unusual national dish.
+</string>
+
+    <string name="easterD">Easter</string>
+    <string name="easterDesc">The Christian holiday of Easter falls over one weekend in March or April, with the Monday and Friday both bank holidays (meaning many people don’t have to work). Religious processions are held (usually on the Sunday), while children hunt for chocolate eggs left by the Easter Bunny – a mythical giant rabbit with a penchant for chocolate (not to be confused with Welsh rarebit).</string>
+
+
+
+    <string name="calanMai">Calan Mai</string>
+    <string name="calanMaiDesc">
+        Calan Mai, on 1 May, was traditionally considered the beginning of summer. Houses were decorated and bonfires lit, and big parties took place. Today, the first Monday in May is still a bank holiday (meaning many people don’t have to work).
+</string>
 
 
 

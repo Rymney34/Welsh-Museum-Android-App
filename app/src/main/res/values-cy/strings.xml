@@ -33,4 +33,33 @@
     <string name="hwb">Casgliad cenedlaethol o adnoddau addysgol digidol Cymraeg yw Hwb</string>
     <string name="welshAcademy">Geiriadur Saesneg-Cymraeg yr Academi Ar-lein</string>
     <string name="y_ta">Y Termiadur Addysg</string>
+    <string name="stDwynd">Dydd Santes Dwynwen</string>
+    <string name="stDwyndDesc">Efallai mair golygfeydd o fynyddoedd uchel sy\'n gwneud hynny, ond oedd yn griw rhamantus yma! Mae gennym hyd yn oed ein nawddsant cariadon ein hunain. Anghofiwch Ddydd San Ffolant, 25 Ionawr yw diwrnod mwyaf rhamantus y flwyddyn yng Nghymru. Rhoddwn anrhegion rhamantus i anwyliaid i gofio am Santes Dwynwen merch a gafodd ei tharo mewn cariad a ddaeth yn lleian ar ôl cael ei gwahardd gan ei thad rhag priodi’r dyn yr oedd yn ei garu.</string>
+    <string name="DyddM">Dydd Miwsig Cymru</string>
+    <string name="DyddMText">Ar gyfer Dydd Miwsig Cymru rydym yn dathlu cerddoriaeth Gymraeg o bob ffurf, ym mhob genre! Mae\'r wlad yn cael ei meddiannu gan gigs pop-up a pherfformiadau mewn pob math o leoliadau. P’un ai ydych chi’n hoff o indie, roc, pync, ffync, gwerin, electronica, hip hop neu unrhyw beth arall, mae yna gerddoriaeth anhygoel yn cael ei chreu yn yr iaith Gymraeg i chi ei darganfod.</string>
+    <string name="GwylName">Gŵyl Fair y Canhwyllau</string>
+    <string name="GwylDesc">
+        Yn draddodiadol, roedd Gŵyl Fair y Canhwyllau, a ddathlwyd ar Chwefror 2, yn nodi dyfodiad y gwanwyn i Gymru. Roedd canhwyllau\'n cael eu cynnau a\'u gosod mewn ffenestri ac roedd gemau parlwr yn cael eu chwarae. Er nad yw bellach yn nodwedd ar y calendr, mae gwasanaethau ar thema cannwyll yn cael eu cynnal mewn rhai eglwysi i ddathlu\'r dyddiad.
+    </string>
+    <string name="stDavid">Dydd Gwyl Dewi</string>
+    <string name="stDavidDesc">
+    Mae diwrnod cenedlaethol Cymru - Dydd Gŵyl Dewi yn digwydd ar 1 Mawrth. Ledled y wlad mae gorymdeithiau stryd sy’n llawer o hwyl i bawb gyda llawer o fflagiau Cymru yn chwifio. Mae llawer o bobl yn pinio cennin pedr neu genhinen - arwyddluniau cenedlaethol Cymru - ar eu dillad ac mae rhai, yn enwedig plant, yn gwisgo gwisg genedlaethol Gymreig, crysau rygbi tîm cenedlaethol, neu wisgo fel cennin, cennin pedr neu hyd yn oed dreigiau        </string>
+    <string name="pancakeD">Diwrnod Crempog</string>
+    <string name="pancakeDesc">
+    Cynhelir Diwrnod Crempog ar drothwy cyfnod ympryd Cristnogol y Grawys, ac maen gweld pobl yn gwneud crempogau o bob lliw a llun.
+    </string>
+    <string name="lDay">Diwrnod Cenedlaethol Bara Lawr</string>
+    <string name="lDayDesc">
+Ychwanegiad newydd i’r calendr Cymreig, rydym yn defnyddio 14 Ebrill i ddathlu stwffwl Cymreig hynod flasus bara lawr. Bara lawr yw’r fersiwn wedi’i choginio o ‘lawr’, neu wymon porffyra, sef algâu coch diaphanous a geir yn helaeth ar hyd arfordir creigiog Cymru. Lansiwyd y diwrnod gan The Pembrokeshire Beach Food Company yn 2022, i ddathlu’r pryd cenedlaethol anarferol hwn.    </string>
+
+    <string name="easterD">Pasg</string>
+    <string name="easterDesc">
+Mae gwyliau Cristnogol y Pasg yn disgyn dros un penwythnos ym mis Mawrth neu fis Ebrill, gyda’r ddau ŵyl banc ar ddydd Llun a dydd Gwener (sy’n golygu nad oes rhaid i lawer o bobl weithio). Cynhelir gorymdeithiau crefyddol (ar y Sul fel arfer), tra bod plant yn hela am wyau siocled a adawyd gan Bwni’r Pasg – cwningen anferth chwedlonol gyda penchant am siocled (na ddylid ei chymysgu â Welsh rarebit).</string>
+    <string name="calanMai">Calan Mai</string>
+    <string name="calanMaiDesc">
+    Yn draddodiadol, roedd Calan Mai, ar 1 Mai, yn cael ei ystyried yn ddechraur haf. Addurnwyd y tai a chynneuwyd y goelcerth, a chafwyd parti mawr. Heddiw, mae dydd Llun cyntaf mis Mai yn dal i fod yn ddiwrnod banc (syn golygu nad oes rhaid i lawer o bobl weithio).    </string>
+
+
+
+
 </resources>
