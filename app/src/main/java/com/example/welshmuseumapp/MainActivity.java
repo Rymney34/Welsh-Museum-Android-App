@@ -2,10 +2,14 @@ package com.example.welshmuseumapp;
 
 import android.annotation.SuppressLint;
 
+import android.app.Notification;
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.media.RouteListingPreference;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
@@ -26,6 +30,7 @@ import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.core.app.NotificationCompat;
 import androidx.core.content.ContextCompat;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
@@ -115,6 +120,9 @@ public class MainActivity extends BaseActivity {
                 if(id == R.id.eventsNe){
                     Intent intent = new Intent(MainActivity.this, EventNews.class);
                     startActivity(intent);
+
+
+//
                 }
 
                 if (id == R.id.close_btn) {
@@ -169,8 +177,7 @@ public class MainActivity extends BaseActivity {
 
                 TextView menuName = findViewById(R.id.menuName);
 
-
-//                drawerLayout.closeDrawer(R.id.navMn);
+//
 
             }
         });
@@ -238,6 +245,22 @@ public class MainActivity extends BaseActivity {
             return insets;
         });
     }
+
+//    public void showNotification() {
+//        // Create a notification using NotificationCompat
+//        Notification notification = new NotificationCompat.Builder(this, "default_channel")
+//                .setSmallIcon(R.drawable.baseline_arrow_back_24) // Set an icon
+//                .setContentTitle("My Notification Title") // Set the title
+//                .setContentText("This is the content of the notification") // Set the content
+//                .setPriority(NotificationCompat.PRIORITY_DEFAULT) // Set the priority
+//                .build();
+//
+//        // Get the system's NotificationManager
+//        NotificationManager notificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+//
+//        // Show the notification
+//        notificationManager.notify(1, notification); // ID 1 for this notification
+//    }
 
     public void startNewActivity(View v, Class<?> museum){
         Intent intent = new Intent(this, museum);
