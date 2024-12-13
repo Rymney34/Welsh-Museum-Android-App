@@ -1,7 +1,7 @@
 package com.example.welshmuseumapp;
 
 import android.content.Intent;
-import android.media.Image;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.webkit.WebChromeClient;
@@ -12,7 +12,6 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
@@ -21,8 +20,6 @@ import androidx.core.view.WindowInsetsCompat;
 import com.denzcoskun.imageslider.ImageSlider;
 import com.denzcoskun.imageslider.constants.ScaleTypes;
 import com.denzcoskun.imageslider.models.SlideModel;
-
-import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 
@@ -35,6 +32,10 @@ public class Museum extends BaseActivity {
         setContentView(R.layout.museum1);
 
         RelativeLayout relativeLayout2 = findViewById(R.id.relativeLayout2);
+
+        ImageView facebookBtn = findViewById(R.id.facebookBtn);
+
+        ImageView instBtn = findViewById(R.id.instagramBtn);
 
         ImageView btnBack = findViewById(R.id.btnBack);
 
@@ -60,9 +61,10 @@ public class Museum extends BaseActivity {
 
         TextView textView10 = findViewById(R.id.textView10);
 
+        TextView textView11 =findViewById(R.id.textView11);
 
 
-
+        textView11.setText(resources.getString(R.string.leave_review));
 
         textView4.setText(resources.getString(R.string.welsh_heritage));
 
@@ -120,12 +122,41 @@ public class Museum extends BaseActivity {
             }
         });
 
+        facebookBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                try {
+                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.facebook.com/museumcardiff/?locale=en_GB"));
+                    startActivity(intent);
+                } catch(Exception e) {
+                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.facebook.com/appetizerandroid")));
+                }
+            }
+        });
+
+        instBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.musseum1), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
     }
+
+//    public static Intent getOpenFacebookIntent() {
+//
+//        try {
+//            context.getPackageManager().getPackageInfo("com.facebook.katana", 0);
+//            return new Intent(Intent.ACTION_VIEW, Uri.parse("fb://page/<id_here>"));
+//        } catch (Exception e) {
+//            return new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.facebook.com/<user_name_here>"));
+//        }
+//    }
 
     public void startNewActivity(View v){
         Intent intent = new Intent(this, ImmersiveExp.class);
