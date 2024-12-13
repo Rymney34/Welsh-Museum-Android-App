@@ -134,10 +134,17 @@ public class Museum extends BaseActivity {
             }
         });
 
+
+
         instBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                try {
+                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.instagram.com/cardiffnationalmuseum/"));
+                    startActivity(intent);
+                } catch(Exception e) {
+                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.instagram.com/appetizerandroid")));
+                }
             }
         });
 

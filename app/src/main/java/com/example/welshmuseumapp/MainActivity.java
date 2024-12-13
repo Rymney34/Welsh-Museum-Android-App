@@ -63,7 +63,7 @@ public class MainActivity extends BaseActivity {
         Window window = getWindow();
 
         // Set status bar color
-        window.setStatusBarColor(ContextCompat.getColor(this, R.color.noC));
+        window.setStatusBarColor(ContextCompat.getColor(this, R.color.lightGray));
 
         // Set navigation bar color
 //        window.setNavigationBarColor(ContextCompat.getColor(this, R.color.green));
@@ -126,7 +126,7 @@ public class MainActivity extends BaseActivity {
                 }
 
                 if (id == R.id.close_btn) {
-                    finish();
+                    drawerLayout.closeDrawers();
                     return true;
                 }
                 return false;
@@ -221,7 +221,7 @@ public class MainActivity extends BaseActivity {
 
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(), "Toast Message", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(getApplicationContext(), "Toast Message", Toast.LENGTH_SHORT).show();
                 startNewActivity(v, RLMuseum.class);
             }
         });

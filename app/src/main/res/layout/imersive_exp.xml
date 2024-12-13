@@ -37,52 +37,9 @@
         app:autoSizeStepGranularity="1dp"
         app:autoSizeTextType="uniform"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.546"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/btn1"
-        android:layout_width="match_parent"
-        android:layout_height="130dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="464dp"
-        android:backgroundTint="@color/green"
-        app:cardCornerRadius="40dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        android:contentDescription="@string/panomric_images">
-
-
-        <ImageView
-            android:layout_width="129dp"
-            android:layout_height="194dp"
-            android:src="@drawable/panoramicv">
-
-        </ImageView>
-
-        <TextView
-            android:id="@+id/panoramic2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="145dp"
-            android:layout_marginTop="45dp"
-            android:text="@string/panoramic_image"
-            android:textColor="@color/white"
-            android:textSize="25sp"
-            app:autoSizeMaxTextSize="30dp"
-            app:autoSizeMinTextSize="12dp"
-            app:autoSizeStepGranularity="5dp"
-            app:autoSizeTextType="uniform"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.496"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-    </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
         android:id="@+id/btn2"
@@ -92,21 +49,20 @@
         android:layout_alignParentEnd="true"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="292dp"
+        android:layout_marginBottom="400dp"
         android:backgroundTint="@color/green"
+        android:contentDescription="@string/google_street_view"
         app:cardCornerRadius="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        android:contentDescription="@string/google_street_view">
+        app:layout_constraintStart_toStartOf="parent">
 
 
         <ImageView
             android:layout_width="131dp"
             android:layout_height="match_parent"
-            android:src="@drawable/googlestreetv"
-            >
+            android:src="@drawable/googlestreetv">
 
         </ImageView>
 
@@ -137,14 +93,14 @@
         android:layout_alignParentEnd="true"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="128dp"
+        android:layout_marginBottom="236dp"
         android:backgroundTint="@color/green"
+        android:contentDescription="@string/_360_degree_tour"
         app:cardCornerRadius="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        android:contentDescription="@string/_360_degree_tour">
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
 
 
         <ImageView

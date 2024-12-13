@@ -1,6 +1,7 @@
 package com.example.welshmuseumapp;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
@@ -36,7 +37,9 @@ public class RLMuseum extends BaseActivity {
 
         ImageView museumImg, btnBack;
 
+        ImageView facebookBtn = findViewById(R.id.facebookBtn);
 
+        ImageView instBtn = findViewById(R.id.instagramBtn);
 
         RelativeLayout relativeLayout2 = findViewById(R.id.relativeLayout2);
 
@@ -83,6 +86,31 @@ public class RLMuseum extends BaseActivity {
             }
         });
 
+        facebookBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                try {
+                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.facebook.com/romanlegionmuseum/?locale=en_GB"));
+                    startActivity(intent);
+                } catch(Exception e) {
+                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.facebook.com/appetizerandroid")));
+                }
+            }
+        });
+
+
+
+        instBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                try {
+                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.instagram.com/explore/locations/254715255/national-roman-legion-museum/"));
+                    startActivity(intent);
+                } catch(Exception e) {
+                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.instagram.com/appetizerandroid")));
+                }
+            }
+        });
 
 
         RelativeLayout.LayoutParams params1 = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.WRAP_CONTENT, RelativeLayout.LayoutParams.WRAP_CONTENT);

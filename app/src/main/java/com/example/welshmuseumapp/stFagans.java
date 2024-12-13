@@ -1,6 +1,7 @@
 package com.example.welshmuseumapp;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
@@ -40,7 +41,9 @@ public class stFagans extends BaseActivity {
         // Set status bar color
         window.setStatusBarColor(ContextCompat.getColor(this,  R.color.noC));
 
+        ImageView facebookBtn = findViewById(R.id.facebookBtn);
 
+        ImageView instBtn = findViewById(R.id.instagramBtn);
 
         ImageView museumImg, btnBack;
 
@@ -84,10 +87,38 @@ public class stFagans extends BaseActivity {
 
 
 
+
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 returnBack(v);
+            }
+        });
+
+
+        facebookBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                try {
+                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.facebook.com/pages/St%20Fagans%20National%20Museum%20of%20History/109639082395066/"));
+                    startActivity(intent);
+                } catch(Exception e) {
+                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.facebook.com/appetizerandroid")));
+                }
+            }
+        });
+
+
+
+        instBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                try {
+                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.instagram.com/explore/locations/114805/st-fagans-national-museum-of-history/"));
+                    startActivity(intent);
+                } catch(Exception e) {
+                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.instagram.com/appetizerandroid")));
+                }
             }
         });
 
@@ -100,16 +131,7 @@ public class stFagans extends BaseActivity {
 
         museumImg.setImageResource(R.drawable.stfagans);
 
-//        RelativeLayout.LayoutParams params2 = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.WRAP_CONTENT,  RelativeLayout.LayoutParams.WRAP_CONTENT);
 
-//        ViewGroup.MarginLayoutParams params2 = (ViewGroup.MarginLayoutParams) museumImg.getLayoutParams();
-//
-//        LinearLayout.LayoutParams params3 = new LinearLayout.LayoutParams(300, -10);
-//        museumImg.setLayoutParams(params3);
-//
-//        museumImg.setLayoutParams(params2);
-//
-//        params2.setMargins(0, 50, 500, 0);
 
         ViewGroup.MarginLayoutParams params = (ViewGroup.MarginLayoutParams) museumImg.getLayoutParams();
 

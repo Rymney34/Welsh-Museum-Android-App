@@ -21,7 +21,6 @@ public class ImmersiveExp2 extends BaseActivity {
 
         setContentView(R.layout.imersive_exp);
 
-        CardView btn1 = findViewById(R.id.btn1);
 
         CardView btn2 = findViewById(R.id.btn2);
 
@@ -30,7 +29,6 @@ public class ImmersiveExp2 extends BaseActivity {
         ImageView btnBack = findViewById(R.id.btnBack);
 
 
-        TextView panoramic2 = findViewById(R.id.panoramic2);
 
         TextView panoramic = findViewById(R.id.panoramic);
 
@@ -41,7 +39,7 @@ public class ImmersiveExp2 extends BaseActivity {
 
         textView5.setText(resources.getString(R.string.immersive_experience));
 
-        panoramic2.setText(resources.getString(R.string.panoramic_image));
+
         panoramic.setText(resources.getString(R.string.google_street_viewTxt));
         degreeTour.setText(resources.getString(R.string._360_degree_tour));
 
