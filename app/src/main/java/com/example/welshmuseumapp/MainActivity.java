@@ -1,12 +1,15 @@
 package com.example.welshmuseumapp;
 
+import android.Manifest;
 import android.annotation.SuppressLint;
 
 import android.app.Notification;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
+import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.content.res.Resources;
 import android.media.RouteListingPreference;
 import android.os.Build;
@@ -15,6 +18,7 @@ import android.os.Handler;
 import android.os.Looper;
 
 import android.provider.Settings;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -30,7 +34,9 @@ import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.core.app.ActivityCompat;
 import androidx.core.app.NotificationCompat;
+import androidx.core.app.NotificationManagerCompat;
 import androidx.core.content.ContextCompat;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
@@ -53,6 +59,9 @@ public class MainActivity extends BaseActivity {
     private Handler sliderHandler;
     ViewPager viewPager;
     List<SlideItem> slideItems = new ArrayList<>();
+
+    private static final int REQUEST_CODE_NOTIFICATION_PERMISSION = 1;
+    private static final String CHANNEL_ID = "default_channel";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -102,6 +111,28 @@ public class MainActivity extends BaseActivity {
 
         relativeLayout2.bringToFront();
 
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+            if (ContextCompat.checkSelfPermission(this, android.Manifest.permission.POST_NOTIFICATIONS) != PackageManager.PERMISSION_GRANTED) {
+
+                ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.POST_NOTIFICATIONS}, REQUEST_CODE_NOTIFICATION_PERMISSION);
+            }
+        }
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+
+            CharSequence name = "D channel";
+            String description = "D notification channel";
+
+            int importance = NotificationManager.IMPORTANCE_DEFAULT;
+
+            NotificationChannel channel = new NotificationChannel(CHANNEL_ID, name, importance);
+            channel.setDescription(description);
+            NotificationManager notificationManager = getSystemService(NotificationManager.class);
+            notificationManager.createNotificationChannel(channel);
+        }
+
+
+
         myNavigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @SuppressLint("NonConstantResourceId")
             @Override
@@ -121,7 +152,32 @@ public class MainActivity extends BaseActivity {
                     Intent intent = new Intent(MainActivity.this, EventNews.class);
                     startActivity(intent);
 
+                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU &&
+                            ContextCompat.checkSelfPermission(MainActivity.this, Manifest.permission.POST_NOTIFICATIONS) == PackageManager.PERMISSION_GRANTED) {
 
+                        Intent intent1 = new Intent(MainActivity.this, EventNews.class);
+
+                        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+
+                        PendingIntent pendingIntent = PendingIntent.getActivity(MainActivity.this, 0, intent1, PendingIntent.FLAG_IMMUTABLE);
+
+                        NotificationCompat.Builder builder = new NotificationCompat.Builder(MainActivity.this, CHANNEL_ID)
+
+                                .setSmallIcon(R.drawable.baseline_event_24)
+                                .setContentTitle(resources.getString(R.string.not_Name))
+                                .setContentText(resources.getString(R.string.not_Desc))
+                                .setPriority(NotificationCompat.PRIORITY_DEFAULT)
+                                .setContentIntent(pendingIntent)
+                                .setAutoCancel(true);
+
+                        NotificationManagerCompat notificationManager = NotificationManagerCompat.from(MainActivity.this);
+                        notificationManager.notify(1, builder.build());
+
+
+                    } else {
+                        // Show a message if permission is not granted
+                        Toast.makeText(MainActivity.this, "Permission not granted to post notifications", Toast.LENGTH_SHORT).show();
+                    }
 //
                 }
 
@@ -139,6 +195,7 @@ public class MainActivity extends BaseActivity {
 
         boolean isWelsh = LanguagePreference.getLanguage(this).equals("cy");
         languageSwitch.setChecked(isWelsh);
+
 
 
         languageSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
@@ -163,6 +220,8 @@ public class MainActivity extends BaseActivity {
         cardiffM.setText(resources.getString(R.string.crdffMuseum));
         stF.setText(resources.getString(R.string.stFagans));
         rlM.setText(resources.getString(R.string.rlm));
+
+
 
 
 
