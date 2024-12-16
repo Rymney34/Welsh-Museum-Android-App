@@ -5,11 +5,13 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.Window;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.Nullable;
+import androidx.core.content.ContextCompat;
 
 public class EventNews extends BaseActivity{
 
@@ -19,6 +21,10 @@ public class EventNews extends BaseActivity{
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.events_news);
+
+        Window window = getWindow();
+
+        window.setStatusBarColor(ContextCompat.getColor(this, R.color.lightGray));
 
         TextView txtV = findViewById(R.id.textVieweN);
 
@@ -35,22 +41,25 @@ public class EventNews extends BaseActivity{
             }
         });
 
-        cardCreator("stDwynd", "stDwyndDesc");
+        String[] heading = resources.getStringArray(R.array.event_headings);
+        String[] desc = resources.getStringArray(R.array.event_descriptions);
+
+        cardCreator(heading[0], desc[0]);
 
 
-        cardCreator("GwylName", "GwylDesc");
+        cardCreator(heading[0], desc[0]);
 
-        cardCreator("DyddM", "DyddMText");
+        cardCreator(heading[1], desc[1]);
 
-        cardCreator("stDavid", "stDavidDesc");
+        cardCreator(heading[2], desc[2]);
 
-        cardCreator("pancakeD", "pancakeDesc");
+        cardCreator(heading[3], desc[3]);
 
-        cardCreator("lDay", "lDayDesc");
+        cardCreator(heading[4], desc[4]);
 
-        cardCreator("easterD", "easterDesc");
+        cardCreator(heading[5], desc[5]);
 
-        cardCreator("calanMai", "calanMaiDesc");
+        cardCreator(heading[6], desc[6]);
 
 
     }
@@ -68,8 +77,8 @@ public class EventNews extends BaseActivity{
 
         TextView textViewDesc = newCard.findViewById(R.id.textViewDesc);
 
-        textView.setText(getResources().getIdentifier(heading, "string", getPackageName()));
-        textViewDesc.setText(getResources().getIdentifier(desc, "string", getPackageName()));
+        textView.setText(heading);
+        textViewDesc.setText(desc);
 
         // Set margins for the card
         LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(

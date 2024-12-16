@@ -145,7 +145,7 @@ public class MainActivity extends BaseActivity {
 
                 }
                 if(id == R.id.contentLib){
-                    Intent intent = new Intent(MainActivity.this, ContentLibrary.class);
+                    Intent intent = new Intent(MainActivity.this, ContentLibrary2.class);
                     startActivity(intent);
                 }
                 if(id == R.id.eventsNe){
@@ -232,11 +232,7 @@ public class MainActivity extends BaseActivity {
 
                 drawerLayout.openDrawer(findViewById(R.id.navMn));
 
-
-
                 TextView menuName = findViewById(R.id.menuName);
-
-//
 
             }
         });
@@ -254,7 +250,7 @@ public class MainActivity extends BaseActivity {
         TextView menuNameHeader = headerView.findViewById(R.id.menuName);
         menuNameHeader.setText(resources.getString(R.string.menu));
 
-//        drawerLayout.openDrawer(findViewById(R.id.navMn));
+
 
         museumBtn1.setOnClickListener(new View.OnClickListener() {
 
@@ -305,21 +301,7 @@ public class MainActivity extends BaseActivity {
         });
     }
 
-//    public void showNotification() {
-//        // Create a notification using NotificationCompat
-//        Notification notification = new NotificationCompat.Builder(this, "default_channel")
-//                .setSmallIcon(R.drawable.baseline_arrow_back_24) // Set an icon
-//                .setContentTitle("My Notification Title") // Set the title
-//                .setContentText("This is the content of the notification") // Set the content
-//                .setPriority(NotificationCompat.PRIORITY_DEFAULT) // Set the priority
-//                .build();
-//
-//        // Get the system's NotificationManager
-//        NotificationManager notificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
-//
-//        // Show the notification
-//        notificationManager.notify(1, notification); // ID 1 for this notification
-//    }
+
 
     public void startNewActivity(View v, Class<?> museum){
         Intent intent = new Intent(this, museum);

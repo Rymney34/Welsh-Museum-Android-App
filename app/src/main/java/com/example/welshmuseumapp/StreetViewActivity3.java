@@ -8,11 +8,13 @@ import com.google.android.gms.maps.model.LatLng;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.Window;
 import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 
-public class StreetViewActivity3 extends AppCompatActivity {
+public class StreetViewActivity3 extends BaseActivity {
 
     private static final LatLng RlmStrView = new LatLng(51.610020, -2.95544);
 
@@ -20,6 +22,10 @@ public class StreetViewActivity3 extends AppCompatActivity {
     protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.street_view);
+
+        Window window = getWindow();
+
+        window.setStatusBarColor(ContextCompat.getColor(this, R.color.lightGray));
 
         ImageView btnBack1 = findViewById(R.id.btnBack);
 

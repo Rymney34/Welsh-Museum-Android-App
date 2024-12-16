@@ -4,6 +4,7 @@ package com.example.welshmuseumapp;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.Window;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -11,6 +12,7 @@ import androidx.activity.ComponentActivity;
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
+import androidx.core.content.ContextCompat;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
@@ -24,7 +26,9 @@ public class ImmersiveExp3 extends BaseActivity {
         setContentView(R.layout.imersive_exp);
 
 
+        Window window = getWindow();
 
+        window.setStatusBarColor(ContextCompat.getColor(this, R.color.lightGray));
 
         CardView btn2 = findViewById(R.id.btn2);
 

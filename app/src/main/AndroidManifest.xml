@@ -32,10 +32,15 @@
         <activity android:name=".ImmersiveExp3"  android:exported="false"/>
         <activity android:name=".DegreeTour" android:exported="false"
             tools:ignore="Instantiatable" />
+        <activity android:name=".DegreeTour2" android:exported="false"
+            tools:ignore="Instantiatable" />
+        <activity android:name=".DegreeTour3" android:exported="false"
+            tools:ignore="Instantiatable" />
         <activity android:name=".StreetViewActivity" android:exported="false"/>
         <activity android:name=".streetViewActivity2" android:exported="false"/>
         <activity android:name=".StreetViewActivity3" android:exported="false"/>
         <activity android:name=".ContentLibrary" android:exported="false"/>
+        <activity android:name=".ContentLibrary2" android:exported="false"/>
         <activity android:name=".EventNews" android:exported="false"/>
         <activity
             android:name=".MainActivity"

@@ -5,7 +5,34 @@
     <string name="stFagans">St Fagans</string>
     <string name="rlm">Roman Legion Museum</string>
     <string name="exhibits_highlights">Exhibits Highlights</string>
-    <string name="cardiffexhibitsdesc">The National Museum Cardiff in Wales houses an extensive and eclectic collection, celebrating Welsh culture, natural history, art, and archaeology. Its natural history exhibits showcase the geological evolution of Wales, complete with fossils, minerals, and a full-scale dinosaur skeleton that captivates visitors. The museums art galleries hold an impressive range of European paintings, including works by Van Gogh, Monet, and Welsh artists such as Gwen John. Archaeological displays feature prehistoric artifacts, Roman-era relics, and medieval treasures that trace Wales’s historical and cultural journey. With its hands-on exhibits, including an Evolution of Wales gallery and temporary exhibitions, the museum offers an immersive experience into both Welsh and international heritage.</string>
+    <string name="cardiffexhibitsSlider">
+        The Cardiff National museum features a range of fascinating exhibits. A 220-million-year-old dinosaur footprint, discovered by four-year-old Lily in 2021 at Bendrick’s Bay, is now on display, belonging to an unknown herbivorous dinosaur from the Upper Triassic period.
+        The oldest artifact is a 4.56-billion-year-old iron meteorite from Namibia, weighing 260kg, part of a collection of meteorites from around the world.
+        Also on display is the Jenkins Vase, originally a Roman altar from Naples, transformed into a vase in the 18th century, depicting the marriage of Paris and Helen.
+        Lastly, the foyer showcases Dracoraptor hanigani, the first ever theropod dinosaur skeleton found in Wales. Discovered in 2014, this ancient predator’s fossils and reconstructions offer a glimpse into its Jurassic past.
+        (Images taken form Museum Wales)
+    </string>
+    <string name="cardiffexhibitsdesc">
+        The National Museum Cardiff in Wales houses an extensive and eclectic collection, celebrating Welsh culture, natural history, art, and archaeology. The museums art galleries hold an impressive range of European paintings, including works by Van Gogh, Monet, and Welsh artists such as Gwen John. Archaeological displays feature prehistoric artifacts, Roman-era relics, and medieval treasures that trace Wales’s historical and cultural journey. With its hands-on exhibits, including an Evolution of Wales gallery and temporary exhibitions, the museum offers an immersive experience into both Welsh and international heritage.
+    </string>
+
+    <string name="stFagansSlider">
+        St Fagans National Historical Museum offers a wealth of information about Welsh life, thanks to its collection of historic buildings and beautiful grounds. One of the key exhibits is the Hotel Vulcan, a former pub located on Adam Street in the Newtown area of Cardiff. Built in the 1830s, it was a central part of a thriving multicultural community known as "Little Ireland" due to its large Irish population. Initially, the Vulcan Hotel consisted of two townhouses, which were combined into a hotel, and later, after reconstruction in 1914-5, became the Vulcan Hotel.Another attraction is Nant Walter, a farm workers cottage built around 1770 in Carmarthenshire. The cottage was built of thick log walls made of clay, silt and straw, and the thatched roof was designed so that the house was cool in summer and warm in winter. The cottages small windows and thatched roof of mixed materials reflect the familys ingenuity.Finally, St. Fagans Castle, a Grade 1 Elizabethan manor, is a stunning museum attraction. Donated to the people of Wales in 1948, the castle is surrounded by carefully restored gardens, including an Italian garden, a thyme garden and a rose garden. The area with fish ponds, fountains and a mulberry grove offers visitors the opportunity to experience the beauty of the past while enjoying the splendor of the present.
+    </string>
+    <string name="stFagansdesc">
+        The Historical Museum St. Fagans in Wales offers a fascinating journey through time. Set in a beautiful 100-acre park, the museum showcases more than 40 historic buildings, including a 16th-century farmhouse and a medieval church, bringing Wales past to life. Visitors can experience traditional Welsh life through interactive exhibits, crafts and live demonstrations. The museum also has extensive collections of Welsh art, costume and folk history. The highlight is St. Fagans Castle, a stunning Elizabethan mansion surrounded by beautiful gardens. It is an exciting and informative experience offering a unique perspective on the cultural heritage of Wales.
+    </string>
+
+    <string name="rlmSlider">
+        The Roman Legion Museum in Caerleon offers an opportunity to get to know the military and civilian life of the Romans. Among the main exhibits are a 1st-century tablet, the oldest surviving script in Wales, and a memorial stone in honor of Thadia Wallaunius and her son Thadius Exuperatus. The museum also has one of the best stocks of Roman silver coins and the UKs largest collection of engraved gems discovered in the drain of the bathhouse. Visitors can relax in the Roman-style garden, which features plants used in Roman cooking and medicine. The museum also has a recreated barracks where you can get to know the daily life of Roman soldiers. The fortress towers of Caerleon feature part of the original bathhouse with spectacular sound and light effects, demonstrating an advanced Roman approach to bathing that continues to influence modern spa culture.  (Images taken form © Amgueddfa Cymru-National Museum Wales, © Hawlfraint y Goron / Crown Copyright) </string>
+    <string name="rlmdesc">
+        The video highlights the key exhibits of museum in Caerleon, starting with the only legionnaires barracks on public display in Europe. The remains of four long blocks of rooms with more spacious apartments for the centurion give an idea of the life of the Roman military.
+        Next, the Caerleon Amphitheatre is shown, the most complete in Britain, where residents once enjoyed the brutal sights of combat.
+        The museum also displays Roman household items such as bread coupons, a 3rd-century iron frying pan and rotten baby teeth.
+        Finally, the event program of the National Museum of the Roman Legion brings Roman history to life through events such as soldier demonstrations, Roman cooking and saturnalia celebrations throughout the year.
+    </string>
+
+
     <string name="immersive_experience">Immersive Experience</string>
     <string name="google_street_view">Google Street View</string>
     <string name="panomric_images">Panomric Images</string>
@@ -28,11 +55,22 @@
     <string name="talkback_feature">TalkBack Feature</string>
     <string name="returnBack">return</string>
     <string name="museum_name">Museum name</string>
+
+
     <string name="celebrated">Celebrated dates in Welsh calendar</string>
     <string name="welshBio">Dictionary of Welsh Biography</string>
     <string name="hwb">Hwb is national collection of Welsh digital educational resources</string>
     <string name="welshAcademy">The Welsh Academy English-Welsh Dictionary Online</string>
     <string name="y_ta">Y Termiadur Addysg</string>
+
+    <string-array name="namesL">
+        <item>@string/welshBio</item>
+        <item>@string/welshAcademy</item>
+        <item>@string/celebrated</item>
+        <item>@string/y_ta</item>
+        <item>@string/hwb</item>
+    </string-array>
+
     <string name="stDwynd">St Dwynwens Day</string>
     <string name="stDwyndDesc">Maybe its the views of soaring mountains that do it, but were a romantic bunch here! We even have our own patron saint of lovers. Forget Valentine\'s Day, 25 January is the most romantic day of the year in Wales. We give romantic gifts to loved ones to remember St Dwynwen a love struck lass who became a nun after being forbidden by her father from marrying the man she loved. Ahh.</string>
     <string name="DyddM">Dydd Miwsig Cymru</string>
@@ -63,6 +101,32 @@
     <string name="calanMaiDesc">
         Calan Mai, on 1 May, was traditionally considered the beginning of summer. Houses were decorated and bonfires lit, and big parties took place. Today, the first Monday in May is still a bank holiday (meaning many people don’t have to work).
 </string>
+
+    <string-array name="event_headings">
+        <item>@string/stDwynd</item>
+        <item>@string/DyddM</item>
+        <item>@string/GwylName</item>
+        <item>@string/stDavid</item>
+        <item>@string/pancakeD</item>
+        <item>@string/lDay</item>
+        <item>@string/easterD</item>
+        <item>@string/calanMai</item>
+    </string-array>
+
+
+    <string-array name="event_descriptions">
+        <item>@string/stDwyndDesc</item>
+        <item>@string/DyddMText</item>
+        <item>@string/GwylDesc</item>
+        <item>@string/stDavidDesc</item>
+        <item>@string/pancakeDesc</item>
+        <item>@string/lDayDesc</item>
+        <item>@string/easterDesc</item>
+        <item>@string/calanMaiDesc</item>
+
+
+    </string-array>
+
     <string name="leave_review">Leave Review</string>
     <string name="not_Name">News and events in Wales here ! </string>
     <string name="not_Desc">Check this out to explore more about events in Wales</string>

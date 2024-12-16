@@ -37,9 +37,7 @@ public class stFagans extends BaseActivity {
         setContentView(R.layout.museum1);
 
         Window window = getWindow();
-
-        // Set status bar color
-        window.setStatusBarColor(ContextCompat.getColor(this,  R.color.noC));
+        window.setStatusBarColor(ContextCompat.getColor(this, R.color.lightGray));
 
         ImageView facebookBtn = findViewById(R.id.facebookBtn);
 
@@ -61,10 +59,17 @@ public class stFagans extends BaseActivity {
 
         TextView textView3 = findViewById(R.id.textView3);
 
+        TextView textView7 = findViewById(R.id.textView7);
+
+        TextView textView9 = findViewById(R.id.textView9);
+
         TextView textView6 = findViewById(R.id.textView6);
 
         TextView textView10 = findViewById(R.id.textView10);
 
+        TextView textView11 = findViewById(R.id.textView11);
+
+        textView11.setText(resources.getString(R.string.leave_review));
 
         textView4.setText(resources.getString(R.string.welsh_heritage));
 
@@ -77,6 +82,8 @@ public class stFagans extends BaseActivity {
         textView3.setText(resources.getString(R.string.immersive_experience));
 
 
+
+
         museumImg = findViewById(R.id.museumImg);
 
         btnBack = findViewById(R.id.btnBack);
@@ -84,6 +91,9 @@ public class stFagans extends BaseActivity {
         WebView webView = findViewById(R.id.webView);
 
         CardView imersiveExp = findViewById(R.id.imersiveExp);
+
+        textView7.setText(resources.getString(R.string.stFagansSlider));
+        textView9.setText(resources.getString(R.string.stFagansdesc));
 
 
 

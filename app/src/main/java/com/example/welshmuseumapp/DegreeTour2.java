@@ -2,18 +2,24 @@ package com.example.welshmuseumapp;
 
 import android.os.Bundle;
 import android.view.View;
+import android.view.Window;
 import android.webkit.WebView;
 import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 
-public class DegreeTour2 extends AppCompatActivity {
+public class DegreeTour2 extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.degree_tour);
+
+        Window window = getWindow();
+
+        window.setStatusBarColor(ContextCompat.getColor(this, R.color.lightGray));
 
         WebView webView1 = findViewById(R.id.webView1);
 

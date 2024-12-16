@@ -5,6 +5,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.Window;
 import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
@@ -15,6 +16,7 @@ import android.widget.TextView;
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
+import androidx.core.content.ContextCompat;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
@@ -33,7 +35,9 @@ public class RLMuseum extends BaseActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.museum1);
 
+        Window window = getWindow();
 
+        window.setStatusBarColor(ContextCompat.getColor(this, R.color.lightGray));
 
         ImageView museumImg, btnBack;
 
@@ -59,6 +63,13 @@ public class RLMuseum extends BaseActivity {
 
         TextView textView10 = findViewById(R.id.textView10);
 
+        TextView textView7 = findViewById(R.id.textView7);
+
+        TextView textView9 = findViewById(R.id.textView9);
+
+        TextView textView11 = findViewById(R.id.textView11);
+
+        textView11.setText(resources.getString(R.string.leave_review));
 
         textView4.setText(resources.getString(R.string.welsh_heritage));
 
@@ -69,6 +80,9 @@ public class RLMuseum extends BaseActivity {
         textView8.setText(resources.getString(R.string.exhibits_highlights_video));
 
         textView3.setText(resources.getString(R.string.immersive_experience));
+
+        textView7.setText(resources.getString(R.string.rlmSlider));
+        textView9.setText(resources.getString(R.string.rlmdesc));
 
 
         museumImg = findViewById(R.id.museumImg);

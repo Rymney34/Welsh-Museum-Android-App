@@ -19,69 +19,58 @@ import androidx.cardview.widget.CardView;
 
 import java.util.ArrayList;
 
-public class ContentLibrary extends BaseActivity{
-    ArrayAdapter<String> adapter;
+public class ContentLibrary extends BaseActivity {
 
-
-    ArrayList<String> mylist;
-
-    SearchView search;
-
-    ListView listView;
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.content_library);
-
-        ImageView btnBck = findViewById(R.id.btnBack2);
-
-        SearchView search = findViewById(R.id.search);
-
-        ListView listView = findViewById(R.id.listview);
-
-        mylist = new ArrayList<>();
-        mylist.add("C");
-        mylist.add("C");
-        mylist.add("C");
-        mylist.add("C++");
-        mylist.add("C#");
-        mylist.add("Java");
-        mylist.add("Advanced java");
-        mylist.add("Interview prep with c++");
-        mylist.add("Interview prep with java");
-        mylist.add("data structures with c");
-        mylist.add("data structures with java");
-
-        adapter = new ArrayAdapter<>(ContentLibrary.this, android.R.layout.simple_list_item_1, mylist);
-        listView.setAdapter(adapter);
-
-        search.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
-            @Override
-            public boolean onQueryTextSubmit(String query) {
-
-                if(mylist.contains(query)){
-                    adapter.getFilter().filter(query);
-                }else{
-                    Toast.makeText(ContentLibrary.this, "No Match found",Toast.LENGTH_LONG).show();
-                }
-                return false;
-            }
-
-            @Override
-            public boolean onQueryTextChange(String newText) {
-                    adapter.getFilter().filter(newText);
-                return false;
-            }
-        });
-
-
-        btnBck.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                finish();
-            }
-        });
+//    LinearLayout cards = findViewById(R.id.cards);
+//
+//        ArrayList<cardCreator> mylist;
+//        SearchView search;
+//        ListView listView;
+//        CardAdapter adapter;
+//
+//        @Override
+//        protected void onCreate(Bundle savedInstanceState) {
+//            super.onCreate(savedInstanceState);
+//            setContentView(R.layout.content_library);
+//
+//            ImageView btnBck = findViewById(R.id.btnBack2);
+//            search = findViewById(R.id.search);
+//            listView = findViewById(R.id.listview);
+//
+//            mylist = new ArrayList<>();
+//            mylist.add(new cardCreator("welshBio", "welsh_bio", "https://biography.wales/"));
+//            mylist.add(new cardCreator("celebrated","celebration_dates","https://www.wales.com/visit/visiting-wales/celebrated-dates-welsh-calendar"));
+//            mylist.add(new cardCreator("welshAcademy","english_welsh","https://geiriaduracademi.org/?lang=en"));
+//
+//            mylist.add(new cardCreator("hwb","hwb","https://hwb.gov.wales/"));
+//            mylist.add(new cardCreator("y_ta","welsh_app","https://www.termiaduraddysg.cymru/?lang=en"));
+////            // Add more cards to the list as needed
+//
+//            adapter = new CardAdapter(ContentLibrary.this, mylist);
+//            listView.setAdapter(adapter);
+//
+//            search.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+//                @Override
+//                public boolean onQueryTextSubmit(String query) {
+//                    adapter.getFilter().filter(query); // Filter when query is submitted
+//                    return false;
+//                }
+//
+//                @Override
+//                public boolean onQueryTextChange(String newText) {
+//                    adapter.getFilter().filter(newText); // Filter as user types
+//                    return false;
+//                }
+//            });
+//
+//
+//
+//        btnBck.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                finish();
+//            }
+//        });
 
 //        cardCreator("celebrated","celebration_dates","https://www.wales.com/visit/visiting-wales/celebrated-dates-welsh-calendar");
 //
@@ -127,5 +116,6 @@ public class ContentLibrary extends BaseActivity{
 //
 //        LinearLayout parentLayout = findViewById(R.id.cards);
 //        parentLayout.addView(newCard);
-    }
+//    }
+//}
 }

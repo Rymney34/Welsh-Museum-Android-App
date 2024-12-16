@@ -5,7 +5,20 @@
     <string name="stFagans">Sain Ffagan</string>
     <string name="rlm">Amgueddfa Lleng Rufeinig</string>
     <string name="exhibits_highlights">Arddangosfeydd Uchafbwyntiau</string>
-    <string name="cardiffexhibitsdesc">The National Museum Cardiff in Wales houses an extensive and eclectic collection, celebrating Welsh culture, natural history, art, and archaeology. Its natural history exhibits showcase the geological evolution of Wales, complete with fossils, minerals, and a full-scale dinosaur skeleton that captivates visitors. The museums art galleries hold an impressive range of European paintings, including works by Van Gogh, Monet, and Welsh artists such as Gwen John. Archaeological displays feature prehistoric artifacts, Roman-era relics, and medieval treasures that trace Wales’s historical and cultural journey. With its hands-on exhibits, including an Evolution of Wales gallery and temporary exhibitions, the museum offers an immersive experience into both Welsh and international heritage.</string>
+    <string name="cardiffexhibitsSlider">
+       Mae Amgueddfa Genedlaethol Caerdydd yn cynnwys amrywiaeth o arddangosion hynod ddiddorol. Mae ôl troed deinosor 220 miliwn oed, a ddarganfuwyd gan Lily pedair oed yn 2021 ym Mae Bendricks, bellach yn cael ei arddangos, yn perthyn i ddeinosor llysysol anhysbys o r cyfnod Triasig Uchaf. Yr arteffact hynaf yw meteoryn haearn 4.56-biliwn oed o Namibia, syn pwyso 260kg, syn rhan o gasgliad o feteorynnau o bedwar ban byd.Hefyd yn cael ei arddangos mae Fâs Jenkins, allor Rufeinig o Napoli yn wreiddiol, a drawsnewidiwyd yn fâs yn y 18fed ganrif, yn darlunio priodas Paris a Helen.Yn olaf, mae r cyntedd yn arddangos Dracoraptor hanigani, y sgerbwd deinosor theropod cyntaf erioed i w ganfod yng Nghymru. Wedi i ddarganfod yn 2014, mae ffosiliau ac adluniadau r ysglyfaethwr hynafol hwn yn cynnig cipolwg ar ei orffennol Jwrasig.(Lluniau gan Amgueddfa Cymru) (Images taken form Museum Wales)
+    </string>
+    <string name="cardiffexhibitsdesc">
+        Mae Amgueddfa Genedlaethol Caerdydd yng Nghymru yn gartref i gasgliad helaeth ac eclectig, sy’n dathlu diwylliant, hanes natur, celf ac archaeoleg Cymru. Mae orielau celf yr amgueddfa yn cynnal ystod drawiadol o beintiadau Ewropeaidd, gan gynnwys gweithiau gan Van Gogh, Monet, ac artistiaid Cymreig fel Gwen John. Mae arddangosfeydd archeolegol yn cynnwys arteffactau cynhanesyddol, creiriau o’r cyfnod Rhufeinig, a thrysorau canoloesol sy’n olrhain taith hanesyddol a diwylliannol Cymru. Gyda’i harddangosfeydd ymarferol, gan gynnwys oriel Esblygiad Cymru ac arddangosfeydd dros dro, mae’r amgueddfa’n cynnig profiad trochi i dreftadaeth Gymreig a rhyngwladol.    </string>
+    <string name="stFagansSlider">
+        Mae Sain Ffagan Amgueddfa Hanesyddol Cymru yn cynnig cyfoeth o wybodaeth am fywyd Cymru, diolch iw chasgliad o adeiladau hanesyddol a thiroedd hardd. Un or pethau allweddol syn cael ei harddangos ywr Hotel Vulcan, hen dafarn ar Stryd Adam yn ardal y Drenewydd, Caerdydd. Wedii adeiladu yn y 1830au, roedd yn rhan ganolog o gymuned amlddiwylliannol lewyrchus or enw "Iwerddon Fach" oherwydd ei phoblogaeth Wyddelig fawr. I ddechrau, roedd Gwestyr Vulcan yn cynnwys dau dŷ tref, a gafodd eu cyfunon westy, ac yn ddiweddarach, ar ôl ei ailadeiladu ym 1914–5, daeth yn Westyr Vulcan. Atyniad arall yw Nant Walter, bwthyn gweithwyr fferm a godwyd tua 1770 yn Sir Gaerfyrddin. Adeiladwyd y bwthyn o waliau pren trwchus o glai, silt a gwellt, a chynlluniwyd y to gwellt fel bod y tŷ yn oer yn yr haf ac yn gynnes yn y gaeaf. Mae ffenestri bychain y bythynnod a tho gwellt o ddeunyddiau cymysg yn adlewyrchu dyfeisgarwch y teulu. Yn olaf, mae Castell Sain Ffagan, maenordy Gradd 1 Elisabethaidd, yn atyniad amgueddfa syfrdanol. Wedii roi i bobl Cymru ym 1948, maer castell wedi amgylchynu gan erddi wediu hadfer yn ofalus, gan gynnwys gardd Eidalaidd, gardd deim a gardd rhosod.Maer ardal gyda phyllau pysgod, ffynhonnau a llwyn mwyar Mair yn cynnig cyfle i ymwelwyr brofi harddwch y gorffennol wrth fwynhau ysblander y presennol.</string>
+    <string name="stFagansdesc">
+        Yr Amgueddfa Hanesyddol Mae Sain Ffagan yng Nghymru yn cynnig taith ryfeddol drwy amser. Wedi’i lleoli mewn parc 100 erw hardd, mae’r amgueddfa’n arddangos mwy na 40 o adeiladau hanesyddol, gan gynnwys ffermdy o’r 16eg ganrif ac eglwys ganoloesol, gan ddod â gorffennol Cymru yn fyw. Gall ymwelwyr brofi bywyd traddodiadol Cymreig trwy arddangosiadau rhyngweithiol, crefftau ac arddangosiadau byw. Mae gan yr amgueddfa hefyd gasgliadau helaeth o gelf, gwisgoedd a hanes gwerin Cymreig. Yr uchafbwynt yw Castell Sain Ffagan, plasty trawiadol o oes Elisabeth gyda gerddi hardd oi amgylch. Mae’n brofiad cyffrous ac addysgiadol sy’n cynnig persbectif unigryw ar dreftadaeth ddiwylliannol Cymru.    </string>
+    <string name="rlmSlider">
+        Mae Amgueddfa’r Lleng Rufeinig yng Nghaerllion yn cynnig cyfle i ddod i adnabod bywyd milwrol a sifil y Rhufeiniaid. Ymhlith y prif arddangosion mae tabled o’r ganrif 1af, y sgript hynaf sydd wedi goroesi yng Nghymru, a charreg goffa i anrhydeddu Thadia Wallaunius a’i mab Thadius Exuperatus. Mae gan yr amgueddfa hefyd un or stociau gorau o ddarnau arian Rhufeinig a chasgliad mwyaf y DU o emau wediu hysgythru a ddarganfuwyd yn nraen y baddondy. Gall ymwelwyr ymlacio yn yr ardd arddull Rufeinig, sy n cynnwys planhigion a ddefnyddir mewn coginio a meddygaeth Rufeinig. Mae gan yr amgueddfa hefyd farics wedi i ail-greu lle gallwch ddod i adnabod bywyd beunyddiol milwyr Rhufeinig. Mae tyrau caer Caerllion yn rhan o r baddondy gwreiddiol gydag effeithiau sain a golau ysblennydd, gan ddangos agwedd Rufeinig ddatblygedig at ymdrochi sy n parhau i ddylanwadu ar ddiwylliant sba modern. (Images taken form © Amgueddfa Cymru-National Museum Wales, © Hawlfraint y Goron / Crown Copyright)</string>
+    <string name="rlmdesc">
+        Mae r fideo yn tynnu sylw at arddangosion allweddol amgueddfa yng Nghaerllion, gan ddechrau gyda r unig farics llengfilwyr sy n cael ei arddangos yn gyhoeddus yn Ewrop. Mae gweddillion pedwar bloc hir o ystafelloedd gyda fflatiau mwy helaeth ar gyfer y canwriad yn rhoi syniad o fywyd y fyddin Rufeinig. Nesaf, dangosir Amffitheatr Caerllion, yr un fwyaf cyflawn ym Mhrydain, lle bu trigolion unwaith yn mwynhau golygfeydd creulon ymladd. Mae r amgueddfa hefyd yn arddangos eitemau cartref Rhufeinig fel cwponau bara, padell ffrio haearn o r 3edd ganrif a dannedd babanod pwdr. Yn olaf, mae rhaglen ddigwyddiadau Amgueddfa Genedlaethol y Lleng Rufeinig yn dod â hanes Rhufeinig yn fyw trwy ddigwyddiadau fel arddangosiadau milwyr, coginio Rhufeinig a dathliadau saturnalia trwy gydol y flwyddyn.</string>
+
     <string name="immersive_experience">Profiad Trochi</string>
     <string name="google_street_view">Google Street View</string>
     <string name="panomric_images">Delweddau Panomrig</string>
@@ -33,6 +46,15 @@
     <string name="hwb">Casgliad cenedlaethol o adnoddau addysgol digidol Cymraeg yw Hwb</string>
     <string name="welshAcademy">Geiriadur Saesneg-Cymraeg yr Academi Ar-lein</string>
     <string name="y_ta">Y Termiadur Addysg</string>
+
+    <string-array name="namesL">
+        <item>@string/welshBio</item>
+        <item>@string/welshAcademy</item>
+        <item>@string/celebrated</item>
+        <item>@string/y_ta</item>
+        <item>@string/hwb</item>
+    </string-array>
+
     <string name="stDwynd">Dydd Santes Dwynwen</string>
     <string name="stDwyndDesc">Efallai mair golygfeydd o fynyddoedd uchel sy\'n gwneud hynny, ond oedd yn griw rhamantus yma! Mae gennym hyd yn oed ein nawddsant cariadon ein hunain. Anghofiwch Ddydd San Ffolant, 25 Ionawr yw diwrnod mwyaf rhamantus y flwyddyn yng Nghymru. Rhoddwn anrhegion rhamantus i anwyliaid i gofio am Santes Dwynwen merch a gafodd ei tharo mewn cariad a ddaeth yn lleian ar ôl cael ei gwahardd gan ei thad rhag priodi’r dyn yr oedd yn ei garu.</string>
     <string name="DyddM">Dydd Miwsig Cymru</string>
@@ -58,6 +80,30 @@ Mae gwyliau Cristnogol y Pasg yn disgyn dros un penwythnos ym mis Mawrth neu fis
     <string name="calanMai">Calan Mai</string>
     <string name="calanMaiDesc">
     Yn draddodiadol, roedd Calan Mai, ar 1 Mai, yn cael ei ystyried yn ddechraur haf. Addurnwyd y tai a chynneuwyd y goelcerth, a chafwyd parti mawr. Heddiw, mae dydd Llun cyntaf mis Mai yn dal i fod yn ddiwrnod banc (syn golygu nad oes rhaid i lawer o bobl weithio).    </string>
+
+    <string-array name="event_headings">
+        <item>@string/stDwynd</item>
+        <item>@string/DyddM</item>
+        <item>@string/GwylName</item>
+        <item>@string/stDavid</item>
+        <item>@string/pancakeD</item>
+        <item>@string/lDay</item>
+        <item>@string/easterD</item>
+        <item>@string/calanMai</item>
+    </string-array>
+
+
+    <string-array name="event_descriptions">
+    <item>@string/stDwyndDesc</item>
+    <item>@string/DyddMText</item>
+    <item>@string/GwylDesc</item>
+    <item>@string/stDavidDesc</item>
+    <item>@string/pancakeDesc</item>
+    <item>@string/lDayDesc</item>
+    <item>@string/easterDesc</item>
+    <item>@string/calanMaiDesc</item>
+    </string-array>
+
     <string name="leave_review">Gadael Adolygiad</string>
     <string name="not_Name">Newyddion a digwyddiadau yng Nghymru yma ! </string>
     <string name="not_Desc">Edrychwch ar hwn i archwilio mwy am ddigwyddiadau yng Nghymru</string>
