@@ -47,7 +47,10 @@
             android:gravity="center"
             android:text="@string/welsh_heritage"
             android:textColor="@color/white"
-            android:textSize="20sp"
+            android:textSize="25sp"
+            app:autoSizeMaxTextSize="45dp"
+            app:autoSizeMinTextSize="10dp"
+            app:autoSizeStepGranularity="1dp"
             app:autoSizeTextType="uniform" />
 
         <ImageView
@@ -154,7 +157,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
         android:importantForAccessibility="no"
-        android:contentDescription="@null">
+        android:contentDescription="@string/image_slider">
 
         <com.denzcoskun.imageslider.ImageSlider
             android:id="@+id/imageSlider"
@@ -166,7 +169,7 @@
             tools:layout_editor_absoluteX="6dp"
             tools:layout_editor_absoluteY="448dp"
             android:importantForAccessibility="no"
-            android:contentDescription="@null"/>
+            android:contentDescription="@string/slider_images"/>
 
 
     </androidx.cardview.widget.CardView>
@@ -220,7 +223,8 @@
         tools:ignore="MissingConstraints"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView8"/>
+        app:layout_constraintTop_toBottomOf="@+id/textView8"
+        android:contentDescription="@string/highlights_video"/>
 
     <TextView
         android:id="@+id/textView9"
@@ -316,7 +320,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="210dp"
             android:layout_marginTop="140dp"
-            android:text="@string/panomric_images"
+            android:text="@string/_360_degree_tour"
             android:textColor="@color/white"
             android:textSize="16sp"
             app:autoSizeMaxTextSize="20dp"

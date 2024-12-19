@@ -5,6 +5,7 @@ import android.view.View;
 import android.view.Window;
 import android.webkit.WebView;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
@@ -14,7 +15,6 @@ public class DegreeTour3 extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
 
 
         setContentView(R.layout.degree_tour);
@@ -29,10 +29,12 @@ public class DegreeTour3 extends BaseActivity {
 
         WebView webView3 = findViewById(R.id.webView3);
 
-        WebView webView4 = findViewById(R.id.webView4);
-
 
         ImageView btnBack = findViewById(R.id.btnBack);
+
+        TextView txtView13 = findViewById(R.id.textView13);
+
+        txtView13.setText(resources.getString(R.string._360_degree_tour));
 
 
         btnBack.setOnClickListener(new View.OnClickListener() {
@@ -59,15 +61,6 @@ public class DegreeTour3 extends BaseActivity {
 
 
 
-//        webView1.setWebViewClient(new WebViewClient() {
-//            @Override
-//            public boolean shouldOverrideUrlLoading(WebView view, String url) {
-//                if(url.contains("matterport.com/vr/show")) {
-//                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(url)));
-//                    return true;
-//                }
-//                return false;
-//            }
 //        });
     }
 }

@@ -22,6 +22,7 @@ public class SliderAdapter extends PagerAdapter {
 
     @Override
     public int getCount() {
+
         return slideItems.size();
     }
 

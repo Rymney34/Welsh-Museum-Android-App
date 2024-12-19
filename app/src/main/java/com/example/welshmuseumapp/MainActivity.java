@@ -60,8 +60,8 @@ public class MainActivity extends BaseActivity {
     ViewPager viewPager;
     List<SlideItem> slideItems = new ArrayList<>();
 
-    private static final int REQUEST_CODE_NOTIFICATION_PERMISSION = 1;
-    private static final String CHANNEL_ID = "default_channel";
+    public static int REQUEST_CODE_NOTIFICATION_PERMISSION = 1;
+    public static String CHANNEL_ID = "default_channel";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -71,10 +71,10 @@ public class MainActivity extends BaseActivity {
 
         Window window = getWindow();
 
-        // Set status bar color
+        // Set UI bar color
         window.setStatusBarColor(ContextCompat.getColor(this, R.color.lightGray));
 
-        // Set navigation bar color
+
 //        window.setNavigationBarColor(ContextCompat.getColor(this, R.color.green));
 
 
@@ -91,7 +91,7 @@ public class MainActivity extends BaseActivity {
         TextView stF = findViewById(R.id.stF);
 
         TextView rlM = findViewById(R.id.rlM);
-//
+
         ConstraintLayout museumBtn1 = findViewById(R.id.museumBtn1);
 
         ConstraintLayout museumBtn2 = findViewById(R.id.museumBtn2);
@@ -175,10 +175,10 @@ public class MainActivity extends BaseActivity {
 
 
                     } else {
-                        // Show a message if permission is not granted
+
                         Toast.makeText(MainActivity.this, "Permission not granted to post notifications", Toast.LENGTH_SHORT).show();
                     }
-//
+
                 }
 
                 if (id == R.id.close_btn) {
@@ -192,6 +192,9 @@ public class MainActivity extends BaseActivity {
         MenuItem switchItem = myNavigationView.getMenu().findItem(R.id.app_bar_switch);
         Switch languageSwitch = (Switch) switchItem.getActionView().findViewById(R.id.switch_id);
 
+        TextView engch = switchItem.getActionView().findViewById(R.id.lang_english);
+
+        TextView lang_welsh = switchItem.getActionView().findViewById(R.id.lang_welsh);
 
         boolean isWelsh = LanguagePreference.getLanguage(this).equals("cy");
         languageSwitch.setChecked(isWelsh);
@@ -239,11 +242,16 @@ public class MainActivity extends BaseActivity {
         NavigationView navigationView = findViewById(R.id.navMn);
         Menu menu = navigationView.getMenu();
 
+
+
+        engch.setText(resources.getString(R.string.change_english));
+        lang_welsh.setText(resources.getString(R.string.welsh));
+
         menu.findItem(R.id.contentLib).setTitle(resources.getString(R.string.content_library));
         menu.findItem(R.id.eventsNe).setTitle(resources.getString(R.string.events_and_news));
         menu.findItem(R.id.AccessFtr).setTitle(resources.getString(R.string.accessability_settings));
-        menu.findItem(R.id.app_bar_switch).setTitle(resources.getString(R.string.change_english_to_welsh));
         menu.findItem(R.id.close_btn).setTitle(resources.getString(R.string.close));
+
 
 
         View headerView = navigationView.getHeaderView(0);
@@ -276,7 +284,6 @@ public class MainActivity extends BaseActivity {
 
             @Override
             public void onClick(View v) {
-//                Toast.makeText(getApplicationContext(), "Toast Message", Toast.LENGTH_SHORT).show();
                 startNewActivity(v, RLMuseum.class);
             }
         });

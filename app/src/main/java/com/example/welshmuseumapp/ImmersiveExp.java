@@ -82,10 +82,6 @@ public class ImmersiveExp extends BaseActivity {
     });
     }
 
-//    public void startNewActivity(View v){
-//        Intent intent = new Intent(this, Museum.class);
-//        startActivity(intent);
-//    }
 
     public void startNewActivity(View v, Class<?> museum){
         Intent intent = new Intent(this, museum);

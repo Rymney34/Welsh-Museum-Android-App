@@ -130,5 +130,11 @@
     <string name="leave_review">Leave Review</string>
     <string name="not_Name">News and events in Wales here ! </string>
     <string name="not_Desc">Check this out to explore more about events in Wales</string>
+    <string name="change_english">Change English</string>
+    <string name="welsh">Welsh</string>
+    <string name="menu_button">Menu button</string>
+    <string name="image_slider">Image Slider</string>
+    <string name="slider_images">Slider images</string>
+    <string name="highlights_video">Highlights video</string>
 
 </resources>

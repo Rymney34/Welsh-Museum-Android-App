@@ -37,7 +37,6 @@ public class ImmersiveExp3 extends BaseActivity {
         ImageView btnBack = findViewById(R.id.btnBack);
 
 
-
         TextView panoramic = findViewById(R.id.panoramic);
 
         TextView degreeTour = findViewById(R.id.deegree_tour);

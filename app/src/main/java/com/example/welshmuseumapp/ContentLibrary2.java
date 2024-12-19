@@ -29,8 +29,8 @@ public class ContentLibrary2 extends BaseActivity {
         Window window = getWindow();
         window.setStatusBarColor(ContextCompat.getColor(this, R.color.lightGray));
 
-        TextView tx1 = findViewById(R.id.textView)
-                ;
+        TextView tx1 = findViewById(R.id.textView);
+
         tx1.setText(resources.getString(R.string.content_library));
 
         searchView = findViewById(R.id.searchView);
@@ -69,12 +69,10 @@ public class ContentLibrary2 extends BaseActivity {
         });
 
 
-
     }
 
 
     private void itemDisplay(){
-
 
         String[] namesL = resources.getStringArray(R.array.namesL);
 
@@ -93,7 +91,7 @@ public class ContentLibrary2 extends BaseActivity {
 
         ArrayList<LibraryModel> filtereadList = new ArrayList<>();
 
-        for (LibraryModel item :customModelArrayList){
+        for (LibraryModel item : customModelArrayList){
 
             if (item.getTitle().toLowerCase().contains(newText.toLowerCase())){
 

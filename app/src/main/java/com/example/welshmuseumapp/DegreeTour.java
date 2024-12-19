@@ -8,6 +8,7 @@ import android.view.Window;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -35,6 +36,9 @@ public class DegreeTour extends BaseActivity {
 
         ImageView btnBack = findViewById(R.id.btnBack);
 
+        TextView txtView13 = findViewById(R.id.textView13);
+
+        txtView13.setText(resources.getString(R.string._360_degree_tour));
 
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -63,15 +67,6 @@ public class DegreeTour extends BaseActivity {
         webView4.getSettings().setAllowFileAccessFromFileURLs(true);
         webView4.loadUrl("https://my.matterport.com/show/?m=i812RUXgJh7");
 
-//        webView1.setWebViewClient(new WebViewClient() {
-//            @Override
-//            public boolean shouldOverrideUrlLoading(WebView view, String url) {
-//                if(url.contains("matterport.com/vr/show")) {
-//                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(url)));
-//                    return true;
-//                }
-//                return false;
-//            }
-//        });
+
     }
 }

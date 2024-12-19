@@ -81,6 +81,10 @@ public class stFagans extends BaseActivity {
 
         textView3.setText(resources.getString(R.string.immersive_experience));
 
+        textView6.setText(resources.getString(R.string.google_street_viewTxt));
+
+        textView10.setText(resources.getString(R.string._360_degree_tour));
+
 
 
 
@@ -154,8 +158,6 @@ public class stFagans extends BaseActivity {
 
         museumImg.setLayoutParams(params);
 
-
-//        museumImg.setAdjustViewBounds(ce);
 
         ImageSlider imageSlider = findViewById(R.id.imageSlider);
 

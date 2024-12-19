@@ -84,6 +84,10 @@ public class RLMuseum extends BaseActivity {
         textView7.setText(resources.getString(R.string.rlmSlider));
         textView9.setText(resources.getString(R.string.rlmdesc));
 
+        textView6.setText(resources.getString(R.string.google_street_viewTxt));
+
+        textView10.setText(resources.getString(R.string._360_degree_tour));
+
 
         museumImg = findViewById(R.id.museumImg);
 
@@ -96,7 +100,7 @@ public class RLMuseum extends BaseActivity {
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                returnBack(v);
+                finish();
             }
         });
 
@@ -113,7 +117,6 @@ public class RLMuseum extends BaseActivity {
         });
 
 
-
         instBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -126,9 +129,7 @@ public class RLMuseum extends BaseActivity {
             }
         });
 
-
         RelativeLayout.LayoutParams params1 = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.WRAP_CONTENT, RelativeLayout.LayoutParams.WRAP_CONTENT);
-
 
 
         params1.setMargins(dpToPx(60), dpToPx(12), 0, 0);
@@ -189,6 +190,7 @@ public class RLMuseum extends BaseActivity {
     }
 
     int dpToPx(int dp) {
+
         return (int) (dp * getResources().getDisplayMetrics().density);
     }
     public void returnBack (View v){

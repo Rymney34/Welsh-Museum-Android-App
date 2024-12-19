@@ -4,18 +4,22 @@
     android:layout_height="wrap_content"
     android:orientation="horizontal"
     android:gravity="center"
-    android:layout_marginTop="7dp"
-    android:paddingStart="8dp"
-    android:paddingEnd="8dp">
+    android:layout_marginTop="5dp"
+    android:paddingEnd="8dp"
+    android:layout_marginRight="36dp">
 
 
     <TextView
         android:id="@+id/lang_english"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="English"
-        android:textSize="14sp"
-        android:layout_marginEnd="8dp"/>
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:text="@string/change_english"
+        android:textSize="16sp"
+        android:autoSizeMaxTextSize="22dp"
+        android:autoSizeMinTextSize="10dp"
+        android:autoSizeStepGranularity="1dp"
+        android:autoSizeTextType="uniform"
+        android:textStyle="bold" />
 
 
     <Switch
@@ -29,9 +33,15 @@
 
     <TextView
         android:id="@+id/lang_welsh"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Welsh"
-        android:textSize="14sp"
-        android:layout_marginStart="8dp"/>
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="8dp"
+
+        android:text="@string/welsh"
+        android:textSize="16sp"
+        android:autoSizeMaxTextSize="22dp"
+        android:autoSizeMinTextSize="10dp"
+        android:autoSizeStepGranularity="1dp"
+        android:autoSizeTextType="uniform"
+        android:textStyle="bold" />
 </LinearLayout>

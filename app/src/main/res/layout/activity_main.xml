@@ -34,20 +34,20 @@
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentBottom="true"
-                android:layout_marginStart="32dp"
-                android:layout_marginTop="23dp"
-                android:layout_marginEnd="130dp"
-                android:layout_marginBottom="2dp"
+                android:layout_marginStart="33dp"
+                android:layout_marginTop="26dp"
+                android:layout_marginEnd="127dp"
+                android:layout_marginBottom="-2dp"
                 android:layout_toEndOf="@+id/menuBtn"
                 android:gravity="center"
                 android:text="@string/welsh_heritage"
                 android:textColor="@color/white"
                 android:textSize="25sp"
-                app:autoSizeMaxTextSize="25dp"
+                android:textStyle="bold"
+                app:autoSizeMaxTextSize="45dp"
                 app:autoSizeMinTextSize="10dp"
                 app:autoSizeStepGranularity="1dp"
-                app:autoSizeTextType="uniform"
-                android:textStyle="bold" />
+                app:autoSizeTextType="uniform" />
 
             <ImageView
                 android:id="@+id/menuBtn"
@@ -60,6 +60,7 @@
                 android:layout_marginTop="13dp"
                 android:layout_marginBottom="-12dp"
                 android:src="@drawable/baseline_menu_24"
+                android:contentDescription="@string/menu_button"
                 app:tint="#FFFFFFFF" />
 
         </RelativeLayout>
@@ -88,7 +89,7 @@
             android:contentDescription="Slider"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-
+            android:importantForAccessibility="no"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/relativeLayout"
@@ -102,7 +103,8 @@
             android:layout_marginBottom="44dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imgSlider">
+            app:layout_constraintTop_toBottomOf="@+id/imgSlider"
+            >
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/roundCardView"

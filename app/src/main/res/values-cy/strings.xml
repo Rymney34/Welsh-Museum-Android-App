@@ -107,6 +107,11 @@ Mae gwyliau Cristnogol y Pasg yn disgyn dros un penwythnos ym mis Mawrth neu fis
     <string name="leave_review">Gadael Adolygiad</string>
     <string name="not_Name">Newyddion a digwyddiadau yng Nghymru yma ! </string>
     <string name="not_Desc">Edrychwch ar hwn i archwilio mwy am ddigwyddiadau yng Nghymru</string>
-
+    <string name="change_english">Newid Saesneg</string>
+    <string name="welsh">Cymraeg</string>
+    <string name="menu_button">Botwm dewislen</string>
+    <string name="image_slider">Llithrydd Delwedd</string>
+    <string name="slider_images">Delweddau llithrydd</string>
+    <string name="highlights_video">Fideo uchafbwyntiau</string>
 
 </resources>

@@ -43,7 +43,6 @@ public class ImmersiveExp2 extends BaseActivity {
 
         textView5.setText(resources.getString(R.string.immersive_experience));
 
-
         panoramic.setText(resources.getString(R.string.google_street_viewTxt));
         degreeTour.setText(resources.getString(R.string._360_degree_tour));
 
@@ -66,7 +65,6 @@ public class ImmersiveExp2 extends BaseActivity {
                 startNewActivity(v, DegreeTour2.class);
             }
         });
-
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.imerExp), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());

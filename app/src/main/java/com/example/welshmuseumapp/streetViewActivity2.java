@@ -16,7 +16,7 @@ import androidx.core.content.ContextCompat;
 
 public class streetViewActivity2 extends BaseActivity {
 
-    private static final LatLng stFagans1 = new LatLng(51.486501, -3.273409);
+private static final LatLng stFagans1 = new LatLng(51.486501, -3.273409);
 
     @Override
     protected void onCreate(final Bundle savedInstanceState) {
@@ -49,14 +49,7 @@ public class streetViewActivity2 extends BaseActivity {
                         }
                     }
                 });
-
     }
 
-
-
-//    public void startNewActivity(View v){
-//        Intent intent = new Intent(this, Museum.class);
-//        startActivity(intent);
-//    }
 
 }

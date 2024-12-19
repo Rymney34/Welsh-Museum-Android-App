@@ -64,11 +64,18 @@ public class Museum extends BaseActivity {
 
         TextView textView3 = findViewById(R.id.textView3);
 
+        TextView textView7 = findViewById(R.id.textView7);
+
+        TextView textView9 = findViewById(R.id.textView9);
+
         TextView textView6 = findViewById(R.id.textView6);
 
         TextView textView10 = findViewById(R.id.textView10);
 
         TextView textView11 =findViewById(R.id.textView11);
+
+        textView7.setText(resources.getString(R.string.cardiffexhibitsSlider));
+        textView9.setText(resources.getString(R.string.cardiffexhibitsdesc));
 
 
         textView11.setText(resources.getString(R.string.leave_review));
@@ -85,10 +92,7 @@ public class Museum extends BaseActivity {
 
         textView6.setText(resources.getString(R.string.google_street_viewTxt));
 
-        textView10.setText(resources.getString(R.string.panomric_images));
-
-
-
+        textView10.setText(resources.getString(R.string._360_degree_tour));
 
 
         String video = "<iframe width=\"100%\" height=\"100%\" src=\"https://www.youtube.com/embed/Q3bt-id9P2s?si=w1vHsNguSuQr9tAM\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>";
@@ -98,7 +102,7 @@ public class Museum extends BaseActivity {
         webView.setWebChromeClient(new WebChromeClient());
         webView.getSettings().setMixedContentMode(WebSettings.MIXED_CONTENT_COMPATIBILITY_MODE);
 
-        ArrayList<SlideModel> slideModels = new ArrayList<SlideModel>();
+        ArrayList<SlideModel> slideModels = new ArrayList<>();
 
 
         imageSlider.setImageList(slideModels, ScaleTypes.FIT);
@@ -109,9 +113,6 @@ public class Museum extends BaseActivity {
         slideModels.add(new SlideModel(R.drawable.iron_meteor, ScaleTypes.FIT));
 
         imageSlider.setImageList(slideModels, ScaleTypes.FIT);
-
-
-
 
 
 
@@ -162,25 +163,13 @@ public class Museum extends BaseActivity {
         });
     }
 
-//    public static Intent getOpenFacebookIntent() {
-//
-//        try {
-//            context.getPackageManager().getPackageInfo("com.facebook.katana", 0);
-//            return new Intent(Intent.ACTION_VIEW, Uri.parse("fb://page/<id_here>"));
-//        } catch (Exception e) {
-//            return new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.facebook.com/<user_name_here>"));
-//        }
-//    }
+
 
     public void startNewActivity(View v){
         Intent intent = new Intent(this, ImmersiveExp.class);
         startActivity(intent);
     }
 
-    public void returnBack (View v){
-        Intent intent = new Intent(this, MainActivity.class);
-        startActivity(intent);
-    }
 
 
 }

@@ -53,10 +53,4 @@ public class StreetViewActivity3 extends BaseActivity {
     }
 
 
-
-//    public void startNewActivity(View v){
-//        Intent intent = new Intent(this, Museum.class);
-//        startActivity(intent);
-//    }
-
 }

@@ -18,7 +18,6 @@ public class LibraryCardsAdapter extends RecyclerView.Adapter<LibraryCardHolder>
     Context context;
     ArrayList<LibraryModel> customModelArrayList = new ArrayList<>();
 
-    LibraryModel lm;
     public LibraryCardsAdapter(Context context, ArrayList<LibraryModel> customModelArrayList) {
         this.context = context;
         this.customModelArrayList = customModelArrayList;
@@ -53,7 +52,6 @@ public class LibraryCardsAdapter extends RecyclerView.Adapter<LibraryCardHolder>
             }
         });
     }
-
 
 
     public void filterList(ArrayList<LibraryModel> filtereadList ){

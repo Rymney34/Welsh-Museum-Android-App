@@ -12,9 +12,7 @@ public class LibraryCardHolder extends RecyclerView.ViewHolder {
 
     ImageView imageView;
 
-
     TextView tvTitle;
-
 
     CardView cardItemView;
 
