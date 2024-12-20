@@ -56,8 +56,8 @@ public class MainActivity extends BaseActivity {
 
 
     private final int SLIDE_INTERVAL = 7000;
-    private Handler sliderHandler;
-    ViewPager viewPager;
+    private Handler slider_handler;
+    ViewPager VIEW_Pager;
     List<SlideItem> slideItems = new ArrayList<>();
 
     public static int REQUEST_CODE_NOTIFICATION_PERMISSION = 1;
@@ -71,14 +71,10 @@ public class MainActivity extends BaseActivity {
 
         Window window = getWindow();
 
-        // Set UI bar color
+
         window.setStatusBarColor(ContextCompat.getColor(this, R.color.lightGray));
 
 
-//        window.setNavigationBarColor(ContextCompat.getColor(this, R.color.green));
-
-
-        Museum cardiffPage = new Museum();
 
         ImageView menuBtn;
 
@@ -104,9 +100,9 @@ public class MainActivity extends BaseActivity {
 
         NavigationView myNavigationView = findViewById(R.id.navMn);
 
-        viewPager = findViewById(R.id.imgSlider);
+        VIEW_Pager = findViewById(R.id.imgSlider);
 
-        sliderHandler = new Handler(Looper.getMainLooper());
+        slider_handler= new Handler(Looper.getMainLooper());
 
 
         relativeLayout2.bringToFront();
@@ -152,8 +148,7 @@ public class MainActivity extends BaseActivity {
                     Intent intent = new Intent(MainActivity.this, EventNews.class);
                     startActivity(intent);
 
-                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU &&
-                            ContextCompat.checkSelfPermission(MainActivity.this, Manifest.permission.POST_NOTIFICATIONS) == PackageManager.PERMISSION_GRANTED) {
+                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU && ContextCompat.checkSelfPermission(MainActivity.this, Manifest.permission.POST_NOTIFICATIONS) == PackageManager.PERMISSION_GRANTED) {
 
                         Intent intent1 = new Intent(MainActivity.this, EventNews.class);
 
@@ -176,7 +171,7 @@ public class MainActivity extends BaseActivity {
 
                     } else {
 
-                        Toast.makeText(MainActivity.this, "Permission not granted to post notifications", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MainActivity.this, "Permission not granted ", Toast.LENGTH_SHORT).show();
                     }
 
                 }
@@ -296,7 +291,7 @@ public class MainActivity extends BaseActivity {
 
 
         SliderAdapter adapter = new SliderAdapter(this, slideItems);
-        viewPager.setAdapter(adapter);
+        VIEW_Pager.setAdapter(adapter);
 
         startAutoSlide();
 
@@ -315,30 +310,27 @@ public class MainActivity extends BaseActivity {
         startActivity(intent);
     }
 
-    public void startNewActivity3(Class<?> museum){
-        Intent intent = new Intent(this, museum);
-        startActivity(intent);
-    }
+
 
 
     Runnable sliderRunnable = new Runnable() {
         @Override
         public void run() {
-            int nextPage= (viewPager.getCurrentItem() + 1) % slideItems.size();
-            viewPager.setCurrentItem(nextPage, true);
-            sliderHandler.postDelayed(this, SLIDE_INTERVAL);
+            int nextPage= (VIEW_Pager.getCurrentItem() + 1) % slideItems.size();
+            VIEW_Pager.setCurrentItem(nextPage, true);
+            VIEW_Pager.postDelayed(this, SLIDE_INTERVAL);
 
         }
     };
 
 
     public void startAutoSlide(){
-        sliderHandler.postDelayed(sliderRunnable, SLIDE_INTERVAL);
+        VIEW_Pager.postDelayed(sliderRunnable, SLIDE_INTERVAL);
     }
     @Override
     protected void onPause() {
         super.onPause();
-        sliderHandler.removeCallbacks(sliderRunnable);
+        slider_handler.removeCallbacks(sliderRunnable);
     }
     @Override
     protected void onResume() {

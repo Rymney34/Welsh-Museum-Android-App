@@ -171,6 +171,8 @@
             android:importantForAccessibility="no"
             android:contentDescription="@string/slider_images"/>
 
+<!--        Copyright [2024] denzcoskun-->
+
 
     </androidx.cardview.widget.CardView>
 

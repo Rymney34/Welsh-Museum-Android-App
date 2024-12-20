@@ -114,7 +114,7 @@ public class Museum extends BaseActivity {
 
         imageSlider.setImageList(slideModels, ScaleTypes.FIT);
 
-
+//       Copyright [2024] denzcoskun
 
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override

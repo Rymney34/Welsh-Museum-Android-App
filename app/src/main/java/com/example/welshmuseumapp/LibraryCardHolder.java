@@ -26,8 +26,5 @@ public class LibraryCardHolder extends RecyclerView.ViewHolder {
 
 
 
-
-
-
     }
 }

@@ -11,27 +11,29 @@ import android.preference.PreferenceManager;
 import java.util.Locale;
 
     public class LocaleHelper {
-        private static final String SELECTED_LANGUAGE = "Locale.Helper.Selected.Language";
-
+        private static final String SELECTED_LANG = "Locale.Helper.Selected.Language";
         public static Context setLocale(Context context, String language) {
             persist(context, language);
 
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
-                return updateResources(context, language);
+
+                return updResources(context, language);
             }
-
-            return updateResourcesLegacy(context, language);
+            return updateResourcesL(context, language);
         }
-
         private static void persist(Context context, String language) {
+
             SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(context);
             SharedPreferences.Editor editor = preferences.edit();
-            editor.putString(SELECTED_LANGUAGE, language);
+
+
+
+            editor.putString(SELECTED_LANG, language);
             editor.apply();
         }
 
         @TargetApi(Build.VERSION_CODES.N)
-        private static Context updateResources(Context context, String language) {
+        private static Context updResources(Context context, String language) {
             Locale locale = new Locale(language);
             Locale.setDefault(locale);
 
@@ -42,17 +44,19 @@ import java.util.Locale;
             return context.createConfigurationContext(configuration);
         }
 
-        @SuppressWarnings("deprecation")
-        private static Context updateResourcesLegacy(Context context, String language) {
+        private static Context updateResourcesL(Context context, String language) {
             Locale locale = new Locale(language);
             Locale.setDefault(locale);
 
             Resources resources = context.getResources();
             Configuration configuration = resources.getConfiguration();
+
             configuration.locale = locale;
 
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR1) {
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+
                 configuration.setLayoutDirection(locale);
+
             }
 
             resources.updateConfiguration(configuration, resources.getDisplayMetrics());
